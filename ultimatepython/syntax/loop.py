@@ -3,6 +3,11 @@ Loops are to expressions as multiplication is to addition. They help us
 run the same code many times until a certain condition is not met. This
 module shows how to use the for-loop and while-loop, and also shows how
 `continue` and `break` give us precise control over a loop's lifecycle.
+
+Note that for-else and while-else loops exist in Python, but they are
+not commonly used. Please visit this link for some examples:
+
+https://stackoverflow.com/a/59491247/9921431
 """
 
 
@@ -19,15 +24,15 @@ def main():
     assert total == 10
 
     # This is a `for` loop that iterates on values 5..1 and multiplies each
-    # value to `fib`. The `range` iterator is used here more precisely by
+    # value to `fact`. The `range` iterator is used here more precisely by
     # setting the start point at 5, the end point at 0 and the increment
     # step at -1 (going backward one step)
-    fib = 1
+    fact = 1
     for i in range(5, 0, -1):
-        fib *= i
+        fact *= i
 
     # The answer is...120!
-    assert fib == 120
+    assert fact == 120
 
     # This is a simple `while` loop, similar to a `for` loop except that the
     # counter is declared outside of the loop and its state is explicitly

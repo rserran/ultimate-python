@@ -15,7 +15,8 @@ print("Ultimate Python 학습 가이드")
 [English](README.md) |
 [한국어](README.ko.md) |
 [繁体中文](README.zh_tw.md) |
-[Español](README.es.md)
+[Español](README.es.md) |
+[Deutsch](README.de.md)
 
 ## 이 학습 가이드를 만든 이유
 
@@ -118,6 +119,8 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
 - [academic/awesome-datascience](https://github.com/academic/awesome-datascience)
 - [josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
 - [ZuzooVn/machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
+- [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
+- [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 
 ### 대화 형 연습
 
@@ -129,3 +132,4 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
 - [exercism.io](https://exercism.io/)
 - [projecteuler.net](https://projecteuler.net/)
 - [DevProjects](https://www.codementor.io/projects/python)
+- [codewars.com](https://www.codewars.com/)
