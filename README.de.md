@@ -79,6 +79,7 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
 2. **Syntax**
     - Variable: [Built-in literals](ultimatepython/syntax/variable.py) (:cake:)
     - Expression: [Numeric operations](ultimatepython/syntax/expression.py) (:cake:)
+    - Bitwise: [Bitwise operators](ultimatepython/syntax/bitwise.py) (:cake:), [One's/Two's Complement](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) (:books:)
     - Conditional: [if | if-else | if-elif-else](ultimatepython/syntax/conditional.py) (:cake:)
     - Loop: [for-loop | while-loop](ultimatepython/syntax/loop.py) (:cake:)
     - Function: [def | lambda](ultimatepython/syntax/function.py) (:cake:)
@@ -96,6 +97,7 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
     - Abstract class: [Abstract definition](ultimatepython/classes/abstract_class.py)
     - Exception class: [Exception definition](ultimatepython/classes/exception_class.py)
     - Iterator class: [Iterator definition | yield](ultimatepython/classes/iterator_class.py) (:exploding_head:)
+    - Encapsulation: [Encapsulation definition](ultimatepython/classes/encapsulation.py)
 5. **Fortgeschrittene**
     - Decorator: [Decorator definition | wraps](ultimatepython/advanced/decorator.py) (:exploding_head:)
     - Context manager: [Context managers](ultimatepython/advanced/context_manager.py) (:exploding_head:)
@@ -133,6 +135,7 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [ZuzooVn/machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
+- [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 
 ### Interaktive Übungen
 
@@ -145,3 +148,7 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [projecteuler.net](https://projecteuler.net/)
 - [DevProjects](https://www.codementor.io/projects/python)
 - [codewars.com](https://www.codewars.com/)
+- [hackerearth.com](https://www.hackerearth.com/)
+- [codechef.com](https://www.codechef.com/) (:necktie:)
+- [w3schools.com](https://www.w3schools.com/python/) (:brain:)
+- [codeforces.com](https://codeforces.com/)

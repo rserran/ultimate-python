@@ -67,6 +67,7 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
 2. **통사론**
     - 변수 : [내장 리터럴](ultimatepython/syntax/variable.py) (:cake:)
     - 식 : [숫자 연산](ultimatepython/syntax/expression.py) (:cake:)
+    - 비트별: [비트 연산자](ultimatepython/syntax/bitwise.py) (:cake:), [1의 보수/2의 보수](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) (:books:)
     - 조건부 : [if | if-else | if-elif-else](ultimatepython/syntax/conditional.py) (:cake:)
     - 루프 : [for 루프 | while-loop](ultimatepython/syntax/loop.py) (:cake:)
     - 함수 : [def | 람다](ultimatepython/syntax/function.py) (:cake:)
@@ -84,6 +85,7 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
     - 추상 클래스 : [추상 정의](ultimatepython/classes/abstract_class.py)
     - 예외 클래스 : [예외 정의](ultimatepython/classes/exception_class.py)
     - 반복기 클래스 : [반복기 정의 | 수익률](ultimatepython/classes/iterator_class.py) (:exploding_head:)
+    - 캡슐화: [캡슐화 정의](ultimatepython/classes/encapsulation.py)
 5. **고급**
     - 데코레이터 : [데코레이터 정의 | 랩](ultimatepython/advanced/decorator.py) (:exploding_head:)
     - 컨텍스트 관리자 : [컨텍스트 관리자](ultimatepython/advanced/context_manager.py) (:exploding_head:)
@@ -121,6 +123,7 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
 - [ZuzooVn/machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
+- [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 
 ### 대화 형 연습
 
@@ -133,3 +136,7 @@ Repl.it와 같은 브라우저에서 실행할 수있는 독립형 모듈 모음
 - [projecteuler.net](https://projecteuler.net/)
 - [DevProjects](https://www.codementor.io/projects/python)
 - [codewars.com](https://www.codewars.com/)
+- [hackerearth.com](https://www.hackerearth.com/)
+- [codechef.com](https://www.codechef.com/) (:necktie:)
+- [w3schools.com](https://www.w3schools.com/python/) (:brain:)
+- [codeforces.com](https://codeforces.com/)

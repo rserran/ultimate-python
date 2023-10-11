@@ -78,6 +78,7 @@ Hay dos maneras de ejecutar los módulos:
 2. **Sintaxis**
     - Variables: [Literales integrados](ultimatepython/syntax/variable.py) (:cake:)
     - Expresiones: [Operaciones numéricas](ultimatepython/syntax/expression.py) (:cake:)
+    - Bit a bit: [Operadores bit a bit](ultimatepython/syntax/bitwise.py) (:cake:), [Complemento a uno/dos](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) (:books:)
     - Condicionales: [if | if-else | if-elif-else](ultimatepython/syntax/conditional.py) (:cake:)
     - Iteraciones: [for-loop | while-loop](ultimatepython/syntax/loop.py) (:cake:)
     - Funciones: [def | lambda](ultimatepython/syntax/function.py) (:cake:)
@@ -93,8 +94,9 @@ Hay dos maneras de ejecutar los módulos:
 4. **Clases**
     - Clase básica: [Definición de básica](ultimatepython/classes/basic_class.py) (:cake:)
     - Clase abstracta: [Definición de abstracta](ultimatepython/classes/abstract_class.py)
-    - Clase de excepción: [Defición de excepción](ultimatepython/classes/exception_class.py)
+    - Clase de excepción: [Definición de excepción](ultimatepython/classes/exception_class.py)
     - Clase iteradora: [Definición de iteradora | yield](ultimatepython/classes/iterator_class.py) (:exploding_head:)
+    - Encapsulación: [Definición de encapsulación](ultimatepython/classes/encapsulation.py)
 5. **Avanzado**
     - Decorador: [Definición de decorador | wraps](ultimatepython/advanced/decorator.py) (:exploding_head:)
     - Gestor de contexto: [Gestores de contexto](ultimatepython/advanced/context_manager.py) (:exploding_head:)
@@ -132,6 +134,7 @@ Sigue aprendiendo leyendo otros buenos recursos.
 - [ZuzooVn/machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
+- [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 
 ### Práctica interactiva
 
@@ -144,3 +147,7 @@ Continua practicando para que no se oxiden tus habilidades de programación.
 - [projecteuler.net](https://projecteuler.net/)
 - [DevProjects](https://www.codementor.io/projects/python)
 - [codewars.com](https://www.codewars.com/)
+- [hackerearth.com](https://www.hackerearth.com/)
+- [codechef.com](https://www.codechef.com/) (:necktie:)
+- [w3schools.com](https://www.w3schools.com/python/) (:brain:)
+- [codeforces.com](https://codeforces.com/)
