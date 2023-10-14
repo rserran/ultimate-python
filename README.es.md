@@ -90,6 +90,7 @@ Hay dos maneras de ejecutar los módulos:
     - Comprensión: [list | tuple | set | dict](ultimatepython/data_structures/comprehension.py)
     - Cadena: [Operaciones con strings](ultimatepython/data_structures/string.py) (:cake:)
     - Deque: [deque](ultimatepython/data_structures/deque.py) (:exploding_head:)
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) (:exploding_head:)
     - Complejidad de tiempo: [Operaciones de cPython](https://wiki.python.org/moin/TimeComplexity) (:books:, :exploding_head:)
 4. **Clases**
     - Clase básica: [Definición de básica](ultimatepython/classes/basic_class.py) (:cake:)
@@ -135,7 +136,8 @@ Sigue aprendiendo leyendo otros buenos recursos.
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
-
+- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) (:necktie:)
+  
 ### Práctica interactiva
 
 Continua practicando para que no se oxiden tus habilidades de programación.
@@ -151,3 +153,5 @@ Continua practicando para que no se oxiden tus habilidades de programación.
 - [codechef.com](https://www.codechef.com/) (:necktie:)
 - [w3schools.com](https://www.w3schools.com/python/) (:brain:)
 - [codeforces.com](https://codeforces.com/)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/) (:necktie:)
+- [coderbyte.com](https://www.coderbyte.com/) (:necktie:)

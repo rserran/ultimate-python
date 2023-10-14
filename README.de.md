@@ -91,6 +91,7 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
     - Comprehension: [list | tuple | set | dict](ultimatepython/data_structures/comprehension.py)
     - String: [String operations](ultimatepython/data_structures/string.py) (:cake:)
     - Deque: [deque](ultimatepython/data_structures/deque.py) (:exploding_head:)
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) (:exploding_head:)
     - Time complexity: [cPython operations](https://wiki.python.org/moin/TimeComplexity) (:books:, :exploding_head:)
 4. **Klassen**
     - Basic class: [Basic definition](ultimatepython/classes/basic_class.py) (:cake:)
@@ -136,6 +137,7 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
+- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) (:necktie:)
 
 ### Interaktive Übungen
 
@@ -152,3 +154,5 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [codechef.com](https://www.codechef.com/) (:necktie:)
 - [w3schools.com](https://www.w3schools.com/python/) (:brain:)
 - [codeforces.com](https://codeforces.com/)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/) (:necktie:)
+- [coderbyte.com](https://www.coderbyte.com/) (:necktie:)

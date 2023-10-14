@@ -75,6 +75,7 @@ print("Ultimate Python 學習大綱")
     - 綜合：[list | tuple | set | dict](ultimatepython/data_structures/comprehension.py)
     - 字串：[字串操作](ultimatepython/data_structures/string.py) (:cake:)
     - 雙端隊列：[deque](ultimatepython/data_structures/deque.py) (:exploding_head:)
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) (:exploding_head:)
     - 時間複雜度：[cPython操作](https://wiki.python.org/moin/TimeComplexity) (:books:, :exploding_head:)
 4. **類別**
     - 基本類別：[基本定義](ultimatepython/classes/basic_class.py) (:cake:)
@@ -120,7 +121,8 @@ print("Ultimate Python 學習大綱")
 - [30-seconds/30-seconds-of-python](https://github.com/30-seconds/30-seconds-of-python) (:test_tube:)
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
-
+- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) (:necktie:)
+  
 ### 互動練習
 
 繼續練習才能使您的編碼技能不會生疏。
@@ -136,3 +138,5 @@ print("Ultimate Python 學習大綱")
 - [codechef.com](https://www.codechef.com/) (:necktie:)
 - [w3schools.com](https://www.w3schools.com/python/) (:brain:)
 - [codeforces.com](https://codeforces.com/)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/) (:necktie:)
+- [coderbyte.com](https://www.coderbyte.com/) (:necktie:)
