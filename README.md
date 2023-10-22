@@ -93,6 +93,7 @@ There are two ways of running the modules:
     - String: [String operations](ultimatepython/data_structures/string.py) (:cake:)
     - Deque: [deque](ultimatepython/data_structures/deque.py) (:exploding_head:)
     - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) (:exploding_head:)
+    - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) (:exploding_head:)
     - Time complexity: [cPython operations](https://wiki.python.org/moin/TimeComplexity) (:books:, :exploding_head:)
 4. **Classes**
     - Basic class: [Basic definition](ultimatepython/classes/basic_class.py) (:cake:)
@@ -102,6 +103,7 @@ There are two ways of running the modules:
     - Encapsulation: [Encapsulation definition](ultimatepython/classes/encapsulation.py)
 5. **Advanced**
     - Decorator: [Decorator definition | wraps](ultimatepython/advanced/decorator.py) (:exploding_head:)
+    - File Handling: [File Handling](ultimatepython/advanced/file_handling.py) (:exploding_head:)
     - Context manager: [Context managers](ultimatepython/advanced/context_manager.py) (:exploding_head:)
     - Method resolution order: [mro](ultimatepython/advanced/mro.py) (:exploding_head:)
     - Mixin: [Mixin definition](ultimatepython/advanced/mixin.py) (:exploding_head:)
@@ -157,4 +159,5 @@ Keep practicing so that your coding skills don't get rusty.
 - [coderbyte.com](https://www.coderbyte.com/) (:necktie:)
 - [w3schools.com](https://www.w3schools.com/python/) (:brain:)
 - [codeforces.com](https://codeforces.com/)
+- [replit.com](https://replit.com/)
 

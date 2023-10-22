@@ -91,6 +91,7 @@ Hay dos maneras de ejecutar los módulos:
     - Cadena: [Operaciones con strings](ultimatepython/data_structures/string.py) (:cake:)
     - Deque: [deque](ultimatepython/data_structures/deque.py) (:exploding_head:)
     - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) (:exploding_head:)
+    - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) (:exploding_head:)
     - Complejidad de tiempo: [Operaciones de cPython](https://wiki.python.org/moin/TimeComplexity) (:books:, :exploding_head:)
 4. **Clases**
     - Clase básica: [Definición de básica](ultimatepython/classes/basic_class.py) (:cake:)
@@ -100,6 +101,7 @@ Hay dos maneras de ejecutar los módulos:
     - Encapsulación: [Definición de encapsulación](ultimatepython/classes/encapsulation.py)
 5. **Avanzado**
     - Decorador: [Definición de decorador | wraps](ultimatepython/advanced/decorator.py) (:exploding_head:)
+    - Manejo de archivos: [Manejo de archivos](ultimatepython/advanced/file_handling.py) (:exploding_head:)
     - Gestor de contexto: [Gestores de contexto](ultimatepython/advanced/context_manager.py) (:exploding_head:)
     - Orden de resolución de método (MRO por sus siglas en inglés): [mro](ultimatepython/advanced/mro.py) (:exploding_head:)
     - Mixin: [Definición de Mixin](ultimatepython/advanced/mixin.py) (:exploding_head:)
@@ -155,3 +157,4 @@ Continua practicando para que no se oxiden tus habilidades de programación.
 - [codeforces.com](https://codeforces.com/)
 - [geeksforgeeks.org](https://www.geeksforgeeks.org/) (:necktie:)
 - [coderbyte.com](https://www.coderbyte.com/) (:necktie:)
+- [replit.com](https://replit.com/)
