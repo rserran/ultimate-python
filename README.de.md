@@ -1,10 +1,10 @@
 # Ultimativer Python-Lernführer
 
-[![CircleCI](https://img.shields.io/circleci/build/github/huangsam/ultimate-python)](https://circleci.com/gh/huangsam/ultimate-python)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/ultimate-python/ci.yml)](https://github.com/huangsam/ultimate-python/actions)
 [![Code Coverage](https://img.shields.io/codecov/c/github/huangsam/ultimate-python)](https://codecov.io/gh/huangsam/ultimate-python)
 [![Quality Gate Status](https://img.shields.io/sonar/quality_gate/huangsam_ultimate-python?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=huangsam_ultimate-python)
-[![License](https://img.shields.io/github/license/huangsam/ultimate-python)](https://github.com/huangsam/ultimate-python/blob/master/LICENSE)
-[![r/Python](https://img.shields.io/reddit/subreddit-subscribers/Python)](https://www.reddit.com/r/Python/comments/inllmf/ultimate_python_study_guide/)
+[![License](https://img.shields.io/github/license/huangsam/ultimate-python)](https://github.com/huangsam/ultimate-python/blob/main/LICENSE)
+[![r/Python](https://img.shields.io/badge/reddit-original_post-red)](https://www.reddit.com/r/Python/comments/inllmf/ultimate_python_study_guide/)
 
 Der ultimative Python-Lernführer für Einsteiger und Profis gleichermaßen. :snake: :snake: :snake:
 
@@ -34,7 +34,7 @@ Dies sind die Hauptziele bei der Erstellung dieses Leitfadens:
 :trophy: **Als Ressource fungieren** für Python-Neulinge, die es vorziehen, praktisch zu lernen.
 Dieses Repository enthält eine Sammlung von eigenständigen Modulen, die in einer IDE
 wie [PyCharm](https://www.jetbrains.com/pycharm/) und im Browser wie
-[Replit](https://replit.com/languages/python3). Wleches wie ein einfaches Terminal 
+[Replit](https://replit.com/languages/python3). Wleches wie ein einfaches Terminal
 mit den Beispielen funktioniert. Die meisten Zeilen haben sorgfältig ausgearbeitete Kommentare, die den Leser
 Schritt für Schritt durch das Programm führen. Die Benutzer werden ermutigt, den
 Quellcode überall zu ändern, solange die "Haupt"-Routinen nicht gelöscht werden und
@@ -146,17 +146,17 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 
 Üben Sie weiter, damit Ihre Programmierkenntnisse nicht einrosten.
 
-- [leetcode.com](https://leetcode.com/) ( :necktie: )
+- [codechef.com](https://www.codechef.com/) ( :necktie: )
+- [codeforces.com](https://codeforces.com/)
+- [codementor.io](https://www.codementor.io) ( :brain: )
+- [coderbyte.com](https://www.coderbyte.com/) ( :necktie: )
+- [codewars.com](https://www.codewars.com/)
+- [exercism.io](https://exercism.io/)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/) ( :necktie: )
+- [hackerearth.com](https://www.hackerearth.com/)
 - [hackerrank.com](https://www.hackerrank.com/) ( :necktie: )
 - [kaggle.com](https://www.kaggle.com/) ( :brain: )
-- [exercism.io](https://exercism.io/)
+- [leetcode.com](https://leetcode.com/) ( :necktie: )
 - [projecteuler.net](https://projecteuler.net/)
-- [DevProjects](https://www.codementor.io/projects/python)
-- [codewars.com](https://www.codewars.com/)
-- [hackerearth.com](https://www.hackerearth.com/)
-- [codechef.com](https://www.codechef.com/) ( :necktie: )
-- [w3schools.com](https://www.w3schools.com/python/) ( :brain: )
-- [codeforces.com](https://codeforces.com/)
-- [geeksforgeeks.org](https://www.geeksforgeeks.org/) ( :necktie: )
-- [coderbyte.com](https://www.coderbyte.com/) ( :necktie: )
 - [replit.com](https://replit.com/)
+- [w3schools.com](https://www.w3schools.com/python/) ( :test_tube: )
