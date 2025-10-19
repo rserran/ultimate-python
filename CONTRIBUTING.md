@@ -119,4 +119,8 @@ We're excited to see what you bring to the table! Your contributions are making 
 
 Please don't hesitate to reach out if you have any questions. Your contributions, no matter how small, are making a big difference! 🌟🐍💥
 
-## Feel the Pythonic Energy - Contribute Now!🔥
+## 🌍 README translations
+
+Please update `README.md` (English) first - it's the source of truth. If you can, mirror important changes like link updates in the corresponding `README.<lang>.md` files so translations stay current. If you can't, no worries — just add a short note in your PR listing which translation files need updates. Thanks - your help keeps the docs welcoming for everyone! 🙏
+
+## Feel the Pythonic Energy - Contribute Now! 🔥

@@ -17,6 +17,7 @@ print("Ultimate Python 학습 가이드")
 [繁体中文](README.zh_tw.md) |
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
+[Français](README.fr.md) |
 [हिन्दी](README.hi.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
@@ -44,7 +45,7 @@ print("Ultimate Python 학습 가이드")
 
 ## 시작하기
 
-[![Run on Replit](https://repl.it/badge/github/huangsam/ultimate-python)](https://repl.it/github/huangsam/ultimate-python)
+[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
 
 로컬 컴퓨터에 Git 및 Python을 설치하지 않고도 브라우저에서 작업 환경을 시작하려면 위의 배지를 클릭하세요. 이러한
 요구 사항이 이미 충족된 경우, 저장소를 바로 clone해도 됩니다.
@@ -119,8 +120,8 @@ print("Ultimate Python 학습 가이드")
 
 잘 알려진 다른 자료를 읽으면서 계속 배우세요.
 
-- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔, 🧪 )
-- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔, 🧪 )
+- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔 , 🧪 )
+- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔 , 🧪 )
 - [geekcomputers/Python](https://github.com/geekcomputers/Python) ( 🧪 )
 - [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) ( 🧪 )
 - [karan/Projects](https://github.com/karan/Projects) ( 🧠 )
@@ -133,6 +134,9 @@ print("Ultimate Python 학습 가이드")
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) ( 👔 )
+- [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ( 🧪 )
+- [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
+- [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
 ### 대화형 연습
 
@@ -153,3 +157,5 @@ print("Ultimate Python 학습 가이드")
 - [projecteuler.net](https://projecteuler.net/)
 - [replit.com](https://replit.com/)
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
+- [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
+- [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )

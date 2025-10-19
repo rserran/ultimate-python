@@ -17,6 +17,7 @@ print("Ultimate Python study guide")
 [繁体中文](README.zh_tw.md) |
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
+[Français](README.fr.md) |
 [हिन्दी](README.hi.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
@@ -145,6 +146,9 @@ Keep learning by reading from other well-regarded resources.
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) ( 👔 )
+- [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ( 🧪 )
+- [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
+- [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
 ### Interactive practice
 
@@ -165,3 +169,5 @@ Keep practicing so that your coding skills don't get rusty.
 - [projecteuler.net](https://projecteuler.net/)
 - [replit.com](https://replit.com/)
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
+- [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
+- [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )

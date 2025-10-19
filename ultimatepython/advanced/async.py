@@ -6,6 +6,7 @@ jobs. In the real world, it takes time for a scheduler to start a job (i.e.
 hit an API endpoint, ask the operating system for resources) so we assume
 that starting a job has some intrinsic delay.
 """
+
 import asyncio
 from dataclasses import dataclass
 from datetime import datetime
@@ -30,12 +31,12 @@ def _is_valid_record(record):
     return record.queued_at < record.started_at
 
 
-def _current_time():
+def _current_time() -> datetime:
     """Return current time that is timezone-naive."""
     return datetime.now()
 
 
-async def start_job(job_id, delay):
+async def start_job(job_id: str, delay: float) -> JobRecord:
     """Start job ID after a certain amount of delay."""
     queue_time = _current_time()
     await asyncio.sleep(delay)
@@ -43,7 +44,7 @@ async def start_job(job_id, delay):
     return JobRecord(job_id, queue_time, start_time)
 
 
-async def schedule_jobs():
+async def schedule_jobs() -> None:
     """Schedule jobs concurrently."""
     # Start a job which also represents a coroutine
     single_job = start_job(uuid4().hex, _DELAY_SMALL)
@@ -76,7 +77,7 @@ async def schedule_jobs():
     assert all(_is_valid_record(record) for record in batch_records)
 
 
-def main():
+def main() -> None:
     asyncio.run(schedule_jobs())
 
 

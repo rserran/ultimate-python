@@ -3,10 +3,11 @@ Variables allow us to store values in named records that can be used in
 a program. This module shows how to define variables and make assertions
 about the state of each defined variable.
 """
+
 import math
 
 
-def main():
+def main() -> None:
     # Here are the main literal types to be aware of
     a = 1
     b = 2.0

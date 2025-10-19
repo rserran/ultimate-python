@@ -22,10 +22,11 @@ offset-aware `datetime` objects. We will also highlight the builtin
 UTC timezone and show how it can be used to make the default `datetime`
 object more powerful.
 """
+
 from datetime import datetime, timezone
 
 
-def convert_dt_to_utc_epoch(dt):
+def convert_dt_to_utc_epoch(dt: datetime) -> float:
     """Convert datetime to UTC epoch seconds.
 
     Note that the timestamp method assumes that an offset-naive
@@ -35,27 +36,27 @@ def convert_dt_to_utc_epoch(dt):
     return dt.timestamp()
 
 
-def convert_utc_epoch_to_dt(epoch):
+def convert_utc_epoch_to_dt(epoch: float) -> datetime:
     """Convert UTC epoch seconds to datetime."""
     return datetime.fromtimestamp(epoch, tz=timezone.utc)
 
 
-def convert_dt_timezone(dt, tz):
+def convert_dt_timezone(dt: datetime, tz: timezone) -> datetime:
     """Convert datetime timezone."""
     return dt.astimezone(tz=tz)
 
 
-def get_utc_now_as_dt():
+def get_utc_now_as_dt() -> datetime:
     """Get current UTC time as datetime."""
     return datetime.now(tz=timezone.utc)
 
 
-def get_utc_now_as_epoch():
+def get_utc_now_as_epoch() -> float:
     """Get current UTC time as epoch seconds."""
     return convert_dt_to_utc_epoch(get_utc_now_as_dt())
 
 
-def main():
+def main() -> None:
     # Create offset-naive datetime
     naive_dt = datetime.now()
     assert naive_dt.tzinfo is None

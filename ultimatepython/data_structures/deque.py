@@ -4,10 +4,11 @@ has some implementation details that are different from other sequences
 like a list. This module highlights those differences and shows how
 a deque can be used as a LIFO stack and a FIFO queue.
 """
+
 from collections import deque
 
 
-def main():
+def main() -> None:
     # A list is identical to a vector where a new array is created when
     # there are too many elements in the old array, and the old array
     # elements are moved over to the new array one-by-one. The time
@@ -19,7 +20,7 @@ def main():
     # Check out the source code for a list and a deque here:
     # https://github.com/python/cpython/blob/3.8/Objects/listobject.c
     # https://github.com/python/cpython/blob/3.8/Modules/_collectionsmodule.c
-    dq = deque()
+    dq: deque[int] = deque()
 
     for i in range(1, 5):
         # Similar to adding a new node to the right of the linked list

@@ -17,6 +17,7 @@ print("Ultimativer Python-Lernführer")
 [繁体中文](README.zh_tw.md) |
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
+[Français](README.fr.md) |
 [हिन्दी](README.hi.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
@@ -36,12 +37,12 @@ Dies sind die Hauptziele bei der Erstellung dieses Leitfadens:
 
 🏆 **Als Ressource fungieren** für Python-Neulinge, die es vorziehen, praktisch zu lernen.
 Dieses Repository enthält eine Sammlung von eigenständigen Modulen, die in einer IDE
-wie [PyCharm](https://www.jetbrains.com/pycharm/) und im Browser wie
-[Replit](https://replit.com/languages/python3). Wleches wie ein einfaches Terminal
-mit den Beispielen funktioniert. Die meisten Zeilen haben sorgfältig ausgearbeitete Kommentare, die den Leser
-Schritt für Schritt durch das Programm führen. Die Benutzer werden ermutigt, den
-Quellcode überall zu ändern, solange die "Haupt"-Routinen nicht gelöscht werden und
-[run successfully](runner.py) nach jeder Änderung.
+ wie [PyCharm](https://www.jetbrains.com/pycharm/) oder im Browser via
+ [Replit](https://replit.com/languages/python3) ausgeführt werden können. Ein Terminal funktioniert
+ ebenfalls gut für die Beispiele. Die meisten Zeilen enthalten sorgfälltig formulierte Kommentare, die den Leser
+ Schritt für Schritt durch die Abläufe führen. Benutzer werden ermutigt, den Quellcode zu ändern,
+ sofern die `main`-Routinen nicht entfernt werden und die Programme nach Änderungen weiterhin erfolgreich
+ ausgeführt werden (siehe `runner.py`).
 
 🏆 **Als reiner Leitfaden dienen** für diejenigen, die die wichtigsten Python-Konzepte wiederholen möchten.
 Wo nur [builtin libraries](https://docs.python.org/3/library/) genutzt werden, so dass
@@ -130,8 +131,8 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
 
 Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 
-- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔, 🧪 )
-- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔, 🧪 )
+- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔 , 🧪 )
+- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔 , 🧪 )
 - [geekcomputers/Python](https://github.com/geekcomputers/Python) ( 🧪 )
 - [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) ( 🧪 )
 - [karan/Projects](https://github.com/karan/Projects) ( 🧠 )
@@ -144,6 +145,9 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) ( 👔 )
+- [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ( 🧪 )
+- [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
+- [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
 ### Interaktive Übungen
 
@@ -164,3 +168,5 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [projecteuler.net](https://projecteuler.net/)
 - [replit.com](https://replit.com/)
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
+- [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
+- [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )

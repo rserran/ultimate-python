@@ -20,21 +20,23 @@ Here are some resources to learn more about the GIL:
 https://realpython.com/python-gil/
 https://wiki.python.org/moin/GlobalInterpreterLock
 """
+
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
+from typing import Callable, Iterable
 
 # Module-level constants
 _MULTIPLY_DELAY = 0.01  # delay is long enough for threads to be faster
 
 
-def multiply_by_two(item):
+def multiply_by_two(item: int) -> int:
     """This multiplication has a small delay."""
     time.sleep(_MULTIPLY_DELAY)
     return item * 2
 
 
-def run_thread_workers(work, data):
+def run_thread_workers(work: Callable[[int], int], data: Iterable[int]) -> set[int]:
     """Run thread workers that invoke work on each data element.
 
     The inspiration for this function comes directly from an example
@@ -42,7 +44,7 @@ def run_thread_workers(work, data):
 
     https://docs.python.org/3/library/concurrent.futures.html
     """
-    results = set()
+    results: set[int] = set()
 
     # We can use a with statement to ensure workers are cleaned up promptly
     with ThreadPoolExecutor() as executor:
@@ -54,7 +56,7 @@ def run_thread_workers(work, data):
     return results
 
 
-def main():
+def main() -> None:
     original_data = {num for num in range(5)}
     expected_data = {(item * 2) for item in original_data}
 

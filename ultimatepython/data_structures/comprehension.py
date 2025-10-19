@@ -4,7 +4,7 @@ sets and dictionaries by looping through iterators.
 """
 
 
-def main():
+def main() -> None:
     # One interesting fact about data structures is that we can build
     # them with comprehensions. Let's explain how the first one works:
     # we just want to create zeros so our expression is set to `0`
@@ -29,10 +29,7 @@ def main():
     # Dictionary comprehension can map each word to its length
     dict_comp = {word: len(word) for word in words}
     assert len(dict_comp) == len(words)
-    assert dict_comp == {"cat": 3,
-                         "mice": 4,
-                         "horse": 5,
-                         "bat": 3}
+    assert dict_comp == {"cat": 3, "mice": 4, "horse": 5, "bat": 3}
 
     # Comprehensions can also be used with inline conditionals to
     # get filtered values from the original list. In this example,

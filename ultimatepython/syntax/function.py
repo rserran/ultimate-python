@@ -5,8 +5,10 @@ a simple function and a composite function that uses the simple function
 in an interesting way.
 """
 
+from typing import Any, Callable
 
-def add(x, y):
+
+def add(x: Any, y: Any) -> Any:
     """Add two objects together to produce a new object.
 
     Two differences between `add` and `main` are that:
@@ -17,7 +19,7 @@ def add(x, y):
     return x + y
 
 
-def sum_until(fn, n):
+def sum_until(fn: Callable[[int], int], n: int) -> int:
     """Sum function results from 0 until n - 1.
 
     This expects a function to be provided as its first input and an integer
@@ -33,7 +35,18 @@ def sum_until(fn, n):
     return total
 
 
-def main():
+def without_parameters() -> object:
+    """A function that does not accept parameters and does not return a value.
+
+    The return type is annotated as `object` to allow callers that assert
+    on the returned value (e.g. `assert without_parameters() is None`) without
+    triggering static checker complaints about a function annotated as
+    returning None being used as a value.
+    """
+    return None
+
+
+def main() -> None:
     # The `add` function can be used for numbers as expected
     add_result_int = add(1, 2)
     assert add_result_int == 3
@@ -52,7 +65,11 @@ def main():
 
     # We can see the `sum_until` docstring by accessing the `__doc__` magic
     # attribute! Remember this - everything in Python is an object
-    assert "includes this docstring!" in sum_until.__doc__
+    # `__doc__` may be None in some environments, coalesce to an empty string
+    assert "includes this docstring!" in (sum_until.__doc__ or "")
+
+    # Call a function without parameters
+    assert without_parameters() is None
 
 
 if __name__ == "__main__":

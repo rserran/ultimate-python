@@ -17,6 +17,7 @@ print("Guía de estudio 'Python Definitivo'")
 [繁体中文](README.zh_tw.md) |
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
+[Français](README.fr.md) |
 [हिन्दी](README.hi.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
@@ -33,14 +34,13 @@ Espero ver a más personas aprendiendo Python y persiguiendo su pasión a travé
 
 Estos son los objetivos principales de esta guía:
 
-🏆 **Servir como un recurso** para principiantes de Python que prefieren aprender por su cuenta.
-Este repositorio enumera una colección de módulos independientes que pueden ser ejecutados en
-un IDE como [PyCharm](https://www.jetbrains.com/pycharm/) e incluso en el navegador, como
-[Repl.it](https://repl.it/languages/python3). Incluso una terminal antigua funcionará igual de bien
-con los ejemplos. La mayoría de las líneas de código tienen comentarios útiles que ayudan a guiar
-al lector para entender paso a paso el proceso que el programa está ejecutando. Se anima a los usuarios
-a que modifiquen el código fuente en cualquier parte siempre y cuando las rutinas principales (`main`)
-se eliminen y se [ejecuten con éxito](runner.py) tras cada cambio.
+🏆 **Servir como un recurso** para principiantes de Python que prefieren aprender de forma práctica.
+Este repositorio contiene una colección de módulos independientes que pueden ejecutarse en
+un IDE como [PyCharm](https://www.jetbrains.com/pycharm/) y en el navegador, como
+[Replit](https://replit.com/languages/python3). Incluso una terminal sencilla funcionará con los ejemplos.
+La mayoría de las líneas de código tienen comentarios útiles que guían al lector paso a paso.
+Se anima a los usuarios a modificar el código fuente en cualquier parte siempre y cuando las rutinas
+principales (`main`) no se eliminen y los programas se ejecuten con éxito tras cada cambio (ver `runner.py`).
 
 🏆 **Servir como una guía pura** para aquellos que quieren reforzar los conceptos base de
 Python. Se utilizan sólo las [librerías integradas](https://docs.python.org/3/library/) para que
@@ -52,7 +52,7 @@ recomendado si tu objetivo es convertirte en un verdadero
 
 ## Empezando
 
-[![Run on Repl.it](https://repl.it/badge/github/huangsam/ultimate-python)](https://repl.it/github/huangsam/ultimate-python)
+[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
 
 Haz clic en la imagen de arriba para crear un ambiente de trabajo en el navegador sin necesidad
 de tener Git y Python instalados en tu ordenador local. Si estos requisitos ya se cumplen,
@@ -129,11 +129,11 @@ Hay dos maneras de ejecutar los módulos:
 
 Sigue aprendiendo leyendo otros buenos recursos.
 
-- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔, 🧪 )
-- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔, 🧪 )
+- [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) ( 👔 , 🧪 )
+- [faif/python-patterns](https://github.com/faif/python-patterns) ( 👔 , 🧪 )
 - [geekcomputers/Python](https://github.com/geekcomputers/Python) ( 🧪 )
 - [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) ( 🧪 )
-- [karan/Projects](https://github.com/karan/Projects) (🧠 )
+- [karan/Projects](https://github.com/karan/Projects) ( 🧠 )
 - [MunGell/awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners) ( 🧠 )
 - [vinta/awesome-python](https://github.com/vinta/awesome-python)
 - [academic/awesome-datascience](https://github.com/academic/awesome-datascience)
@@ -143,6 +143,9 @@ Sigue aprendiendo leyendo otros buenos recursos.
 - [ml-tooling/best-of-python](https://github.com/ml-tooling/best-of-python)
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) ( 👔 )
+- [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ( 🧪 )
+- [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
+- [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
 ### Práctica interactiva
 
@@ -163,3 +166,5 @@ Continua practicando para que no se oxiden tus habilidades de programación.
 - [projecteuler.net](https://projecteuler.net/)
 - [replit.com](https://replit.com/)
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
+- [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
+- [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )

@@ -17,6 +17,7 @@ print("Ultimate Python 學習大綱")
 [繁体中文](README.zh_tw.md) |
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
+[Français](README.fr.md) |
 [हिन्दी](README.hi.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
@@ -40,7 +41,7 @@ print("Ultimate Python 學習大綱")
 
 ## 學習之旅
 
-[![Run on Repl.it](https://repl.it/badge/github/huangsam/ultimate-python)](https://repl.it/github/huangsam/ultimate-python)
+[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
 
 單擊上面的徽章就可在瀏覽器中啟動工作環境，而無需在電腦上額外安裝Git和Python。當你完成啟動，請複製這存儲庫。
 當你可以開啟你所複製存儲庫後，您就準備好Python學習之旅!善用每個模組，請細讀註解並嘗試運行模組代碼。
@@ -132,9 +133,9 @@ print("Ultimate Python 學習大綱")
 
 繼續練習才能使您的編碼技能不會生疏。
 
-- [DevProjects](https://www.codementor.io/projects/python)
 - [codechef.com](https://www.codechef.com/) ( 👔 )
 - [codeforces.com](https://codeforces.com/)
+- [codementor.io](https://www.codementor.io) ( 🧠 )
 - [coderbyte.com](https://www.coderbyte.com/) ( 👔 )
 - [codewars.com](https://www.codewars.com/)
 - [exercism.io](https://exercism.io/)
@@ -147,3 +148,5 @@ print("Ultimate Python 學習大綱")
 - [projecteuler.net](https://projecteuler.net/)
 - [replit.com](https://replit.com/)
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
+- [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
+- [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )
