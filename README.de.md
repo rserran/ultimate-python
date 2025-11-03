@@ -18,7 +18,8 @@ print("Ultimativer Python-Lernführer")
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
 [Français](README.fr.md) |
-[हिन्दी](README.hi.md)
+[हिन्दी](README.hi.md) |
+[Português - Brasil](README.pt_br.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
 
@@ -170,3 +171,7 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
 - [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
 - [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )
+
+## Sternengucker der Zeit
+
+[![Stargazers over time](https://starchart.cc/huangsam/ultimate-python.svg?variant=adaptive)](https://starchart.cc/huangsam/ultimate-python)

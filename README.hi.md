@@ -9,7 +9,7 @@
 नए और पेशेवर लोगों के लिए अल्टीमेट पायथन अध्ययन गाइड। 🐍 🐍 🐍
 
 ```python
-print("Ultimate Python study guide")
+print("Ultimate Python स्टडी गाइड")
 ```
 
 [English](README.md) |
@@ -18,7 +18,8 @@ print("Ultimate Python study guide")
 [Español](README.es.md) |
 [Deutsch](README.de.md) |
 [Français](README.fr.md) |
-[हिन्दी](README.hi.md)
+[हिन्दी](README.hi.md) |
+[Português - Brasil](README.pt_br.md)
 
 <img src="images/ultimatepython.webp" alt="Ultimate Python" width="250px" />
 
@@ -153,3 +154,7 @@ print("Ultimate Python study guide")
 - [w3schools.com](https://www.w3schools.com/python/) ( 🧪 )
 - [teclado.com](https://teclado.com/30-days-of-python/#prerequisites) ( 👔 )
 - [fullstakpython.org](https://fullstackpython.org/) ( 🧪 )
+
+## समय के खगोलशास्त्री
+
+[![Stargazers over time](https://starchart.cc/huangsam/ultimate-python.svg?variant=adaptive)](https://starchart.cc/huangsam/ultimate-python)
