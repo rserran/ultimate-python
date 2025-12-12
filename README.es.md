@@ -86,16 +86,20 @@ Hay dos maneras de ejecutar los módulos:
     - Condicionales: [if | if-else | if-elif-else](ultimatepython/syntax/conditional.py) ( 🍰 )
     - Iteraciones: [for-loop | while-loop](ultimatepython/syntax/loop.py) ( 🍰 )
     - Funciones: [def | lambda](ultimatepython/syntax/function.py) ( 🍰 )
+    - Operador morsa: [Expresiones de asignación :=](ultimatepython/syntax/walrus_operator.py) ( 🤯 )
+    - Aplicación de argumentos: [Solo posicional / | Solo palabra clave *](ultimatepython/syntax/arg_enforcement.py) ( 🤯 )
 3. **Estructura de datos**
     - Lista: [Operaciones con listas](ultimatepython/data_structures/list.py) ( 🍰 )
     - Tupla: [Operaciones con tuplas](ultimatepython/data_structures/tuple.py)
     - Set: [Operaciones con sets](ultimatepython/data_structures/set.py)
     - Diccionario: [Operaciones con dicts](ultimatepython/data_structures/dict.py) ( 🍰 )
+    - Unión de diccionarios: [Fusión de diccionarios | y |=](ultimatepython/data_structures/dict_union.py) ( 🤯 )
     - Comprensión: [list | tuple | set | dict](ultimatepython/data_structures/comprehension.py)
     - Cadena: [Operaciones con strings](ultimatepython/data_structures/string.py) ( 🍰 )
     - Deque: [deque](ultimatepython/data_structures/deque.py) ( 🤯 )
     - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
     - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - Herramientas de iteradores: [Herramientas de iteradores](ultimatepython/data_structures/itertools.py) ( 🤯 )
     - Complejidad de tiempo: [Operaciones de cPython](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 4. **Clases**
     - Clase básica: [Definición de básica](ultimatepython/classes/basic_class.py) ( 🍰 )
@@ -119,6 +123,7 @@ Hay dos maneras de ejecutar los módulos:
     - Expresiones regulares: [search | findall | match | fullmatch](ultimatepython/advanced/regex.py) ( 🤯 )
     - Formatos de datos: [json | xml | csv](ultimatepython/advanced/data_format.py) ( 🤯 )
     - Fecha y hora: [datetime | timezone](ultimatepython/advanced/date_time.py) ( 🤯 )
+    - Coincidencia de patrones: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
 
 ## Recursos adicionales
 
