@@ -144,6 +144,15 @@ print("Ultimate Python 학습 가이드")
 - [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
 - [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
+### 저자의 프로젝트
+
+이러한 개념을 익힌 후 무엇을 만들 수 있는지 보여주는 Python으로 제작한 프로젝트들입니다:
+
+- [huangsam/chowist](https://github.com/huangsam/chowist) ( 🧪 )
+- [huangsam/githooks](https://github.com/huangsam/githooks) ( 🧪 )
+- [huangsam/ragchain](https://github.com/huangsam/ragchain) ( 🧪 )
+- [huangsam/mailprune](https://github.com/huangsam/mailprune) ( 🧪 )
+
 ### 대화형 연습
 
 코딩 실력이 녹슬지 않기 위해 계속 연습하세요.

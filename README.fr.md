@@ -26,7 +26,7 @@ print("Guide d’étude Python ultime")
 ## Motivation
 
 J’ai créé ce dépôt GitHub pour partager ce que j’ai appris sur le [cœur de Python](https://www.python.org/)
-au cours de plus de 5 années d’utilisation — en tant que diplômé universitaire, employé
+au cours de plus de 5 années d’utilisation: en tant que diplômé universitaire, employé
 dans de grandes entreprises et contributeur open-source à des dépôts tels que
 [Celery](https://github.com/celery/celery) et
 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com).
@@ -164,6 +164,15 @@ Continue d’apprendre grâce à ces ressources bien établies :
 - [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) ( 🧪 )
 - [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
 - [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
+
+### Projets de l'auteur
+
+Projets que j'ai créés avec Python qui montrent ce que vous pouvez créer après avoir appris ces concepts :
+
+- [huangsam/chowist](https://github.com/huangsam/chowist) ( 🧪 )
+- [huangsam/githooks](https://github.com/huangsam/githooks) ( 🧪 )
+- [huangsam/ragchain](https://github.com/huangsam/ragchain) ( 🧪 )
+- [huangsam/mailprune](https://github.com/huangsam/mailprune) ( 🧪 )
 
 ### Pratique interactive
 

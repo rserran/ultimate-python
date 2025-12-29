@@ -138,6 +138,15 @@ print("Ultimate Python स्टडी गाइड")
 - [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
 - [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
+### लेखक की परियोजनाएँ
+
+Python से बनाई गई परियोजनाएं जो दिखाती हैं कि इन अवधारणाओं को सीखने के बाद आप क्या बना सकते हैं:
+
+- [huangsam/chowist](https://github.com/huangsam/chowist) ( 🧪 )
+- [huangsam/githooks](https://github.com/huangsam/githooks) ( 🧪 )
+- [huangsam/ragchain](https://github.com/huangsam/ragchain) ( 🧪 )
+- [huangsam/mailprune](https://github.com/huangsam/mailprune) ( 🧪 )
+
 ### इंटरैक्टिव प्रैक्टिस
 
 अभ्यास करते रहें ताकि आपकी कोडिंग कौशल खराब न हों।

@@ -135,6 +135,15 @@ print("Ultimate Python 學習大綱")
 - [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python)
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) ( 👔 )
 
+### 作者的專案
+
+我用 Python 構建的專案，展示學習這些概念後可以創造的內容：
+
+- [huangsam/chowist](https://github.com/huangsam/chowist) ( 🧪 )
+- [huangsam/githooks](https://github.com/huangsam/githooks) ( 🧪 )
+- [huangsam/ragchain](https://github.com/huangsam/ragchain) ( 🧪 )
+- [huangsam/mailprune](https://github.com/huangsam/mailprune) ( 🧪 )
+
 ### 互動練習
 
 繼續練習才能使您的編碼技能不會生疏。

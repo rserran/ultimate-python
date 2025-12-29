@@ -155,6 +155,15 @@ Lernen Sie weiter, indem Sie von anderen Quellen lesen.
 - [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) ( 🧪 )
 - [Avik-Jain/100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) ( 🧪 )
 
+### Projekte des Autors
+
+Projekte, die ich mit Python erstellt habe und die zeigen, was man nach dem Erlernen dieser Konzepte erstellen kann:
+
+- [huangsam/chowist](https://github.com/huangsam/chowist) ( 🧪 )
+- [huangsam/githooks](https://github.com/huangsam/githooks) ( 🧪 )
+- [huangsam/ragchain](https://github.com/huangsam/ragchain) ( 🧪 )
+- [huangsam/mailprune](https://github.com/huangsam/mailprune) ( 🧪 )
+
 ### Interaktive Übungen
 
 Üben Sie weiter, damit Ihre Programmierkenntnisse nicht einrosten.
