@@ -1,0 +1,678 @@
+---
+import lessons from '../data/lessons.json';
+import categoryOrder from '../data/categories.json';
+import { languages, useTranslations, type ui } from '../i18n/ui';
+import { ChevronLeft, ChevronRight, Search } from '@lucide/astro';
+
+type SupportedLang = keyof typeof languages;
+type TranslationKey = keyof (typeof ui)[typeof defaultLang];
+import { defaultLang } from '../i18n/ui';
+
+interface Props {
+  activePath?: string;
+  activeLang?: SupportedLang;
+}
+
+const { activePath, activeLang = 'en' } = Astro.props;
+const t = useTranslations(activeLang);
+
+// Group lessons by category
+const categoriesMap = lessons.reduce(
+  (acc, lesson) => {
+    const cat = lesson.category;
+    if (!acc[cat]) {
+      acc[cat] = {
+        name: t(`category.${cat}` as TranslationKey) || lesson.category_name,
+        lessons: [],
+      };
+    }
+    acc[cat].lessons.push(lesson);
+    return acc;
+  },
+  {} as Record<string, { name: string; lessons: typeof lessons }>
+);
+---
+
+<aside class="sidebar">
+  <button
+    id="sidebar-toggle"
+    class="sidebar-toggle-btn"
+    aria-label="Toggle Sidebar"
+  >
+    <span class="arrow-left"><ChevronLeft size={16} /></span>
+    <span class="arrow-right"><ChevronRight size={16} /></span>
+  </button>
+
+  <div class="sidebar-header">
+    <div class="header-top">
+      <a href={`/ultimate-python/${activeLang}/`} class="sidebar-logo">
+        <svg
+          class="sidebar-logo-svg"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 40 40"
+        >
+          <defs>
+            <mask id="logo-mask-sidebar">
+              <rect x="0" y="0" width="40" height="40" fill="white"></rect>
+              <circle cx="14.5" cy="5" r="1.85" fill="black"></circle>
+              <circle cx="25.5" cy="35" r="1.85" fill="black"></circle>
+              <line
+                x1="10"
+                y1="9.5"
+                x2="20"
+                y2="9.5"
+                stroke="black"
+                stroke-width="1.5"></line>
+              <line
+                x1="20"
+                y1="30.5"
+                x2="30"
+                y2="30.5"
+                stroke="black"
+                stroke-width="1.5"></line>
+              <path
+                d="m 9.5,30 c 0,-10 2.5,-10 10,-10 8.5,0 11,0 11,-10"
+                stroke="black"
+                stroke-width="1.5"
+                fill="none"></path>
+            </mask>
+          </defs>
+          <g mask="url(#logo-mask-sidebar)">
+            <rect
+              x="10"
+              y="0"
+              width="20"
+              height="40"
+              rx="10"
+              ry="5"
+              fill="currentColor"></rect>
+            <rect
+              x="0"
+              y="10"
+              width="40"
+              height="20"
+              rx="5"
+              ry="10"
+              fill="currentColor"></rect>
+          </g>
+        </svg>
+        <span class="logo-text">Ultimate Python</span>
+      </a>
+
+      <!-- Language Selector -->
+      <div class="lang-selector-wrapper">
+        <select id="lang-select" class="lang-select">
+          {
+            Object.entries(languages).map(([code, label]) => (
+              <option value={code} selected={code === activeLang}>
+                {label}
+              </option>
+            ))
+          }
+        </select>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <input
+        type="search"
+        id="sidebar-search"
+        placeholder={t('search.placeholder')}
+        autocomplete="off"
+      />
+      <span class="search-icon"><Search size={16} /></span>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    {
+      categoryOrder.map((catKey) => {
+        const cat = categoriesMap[catKey];
+        if (!cat) return null;
+
+        // Determine if this category contains the active lesson
+        const hasActiveChild = cat.lessons.some((l) => l.path === activePath);
+
+        return (
+          <details
+            class="category-group"
+            open={hasActiveChild || activePath === undefined}
+          >
+            <summary class="category-title">
+              {cat.name}
+              <span class="category-count">({cat.lessons.length})</span>
+            </summary>
+            <ul class="lesson-list">
+              {cat.lessons.map((lesson) => {
+                const isActive = lesson.path === activePath;
+                return (
+                  <li
+                    class="lesson-item"
+                    data-lesson-id={lesson.id}
+                    data-lesson-name={lesson.name.toLowerCase()}
+                  >
+                    <a
+                      href={`/ultimate-python/${activeLang}/${lesson.path}/`}
+                      class={`lesson-link ${isActive ? 'active' : ''}`}
+                    >
+                      <span class="lesson-name">{lesson.name}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        );
+      })
+    }
+  </nav>
+</aside>
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+<style>
+  .sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  :global(html.sidebar-transitioning) .sidebar {
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sidebar-toggle-btn {
+    position: absolute;
+    right: -15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--forest-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    transition:
+      background-color var(--transition-speed),
+      transform var(--transition-speed);
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  :global(html.sidebar-transitioning) .sidebar-toggle-btn {
+    transition:
+      right 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      background-color var(--transition-speed),
+      transform var(--transition-speed);
+  }
+
+  .arrow-left,
+  .arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-right {
+    display: none;
+  }
+
+  :global(html.sidebar-collapsed) .arrow-left {
+    display: none;
+  }
+
+  :global(html.sidebar-collapsed) .arrow-right {
+    display: flex;
+  }
+
+  .sidebar-toggle-btn:hover {
+    background-color: var(--bg-tertiary);
+    transform: scale(1.05);
+  }
+
+  :global(html.sidebar-collapsed) .sidebar {
+    margin-left: calc(-1 * var(--sidebar-width));
+  }
+
+  :global(html.sidebar-collapsed) .sidebar-toggle-btn {
+    right: -45px;
+  }
+
+  .sidebar-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--forest-green);
+    width: 100%;
+  }
+
+  .sidebar-logo-svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .lang-selector-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .lang-selector-wrapper::after {
+    content: '▾';
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-55%);
+    pointer-events: none;
+  }
+
+  .lang-select {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color var(--transition-speed);
+  }
+
+  .lang-select:focus {
+    border-color: var(--forest-green);
+  }
+
+  .search-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    transition: color var(--transition-speed);
+  }
+
+  #sidebar-search {
+    width: 100%;
+    padding: 0.6rem 0.75rem 0.6rem 2.25rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color var(--transition-speed);
+  }
+
+  #sidebar-search:focus {
+    border-color: var(--forest-green);
+    box-shadow: 0 0 0 2px var(--forest-green-soft);
+  }
+
+  #sidebar-search:focus + .search-icon {
+    color: var(--forest-green);
+  }
+
+  .sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .category-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .category-title {
+    font-family: var(--font-serif);
+    color: var(--forest-green);
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .category-title::-webkit-details-marker {
+    display: none;
+  }
+
+  .category-title::after {
+    content: '▾';
+    font-size: 0.8rem;
+    display: inline-block;
+    transition: transform var(--transition-speed);
+  }
+
+  .category-group[open] .category-title::after {
+    transform: rotate(-180deg);
+  }
+
+  .category-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .lesson-list {
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+    border-left: 1px solid var(--border-color);
+  }
+
+  .lesson-item {
+    margin-bottom: 0.25rem;
+  }
+
+  .lesson-link {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+    gap: 0.5rem;
+  }
+
+  .lesson-link:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+
+  .lesson-link.active {
+    background-color: var(--forest-green-soft);
+    color: var(--forest-green);
+    font-weight: 500;
+  }
+
+  .sidebar-backdrop {
+    display: none;
+  }
+
+  @media (width <= 900px) {
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1000;
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    :global(html.sidebar-mobile-open) .sidebar-backdrop {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 999;
+    }
+  }
+</style>
+
+<script>
+  import { navigate } from 'astro:transitions/client';
+
+  // Simple client-side search indexing
+  function setupSearch() {
+    const searchInput = document.getElementById(
+      'sidebar-search'
+    ) as HTMLInputElement;
+    if (!searchInput || searchInput.dataset.searchInitialized) return;
+    searchInput.dataset.searchInitialized = 'true';
+
+    // Cache elements and pre-compute query values to avoid DOM reads/lookups on keystroke
+    const items = Array.from(document.querySelectorAll('.lesson-item'));
+    const groups = Array.from(document.querySelectorAll('.category-group'));
+
+    const cachedLessons = items.map((item) => {
+      const el = item as HTMLElement;
+      return {
+        el,
+        name: (el.getAttribute('data-lesson-name') || '').toLowerCase(),
+        id: (el.getAttribute('data-lesson-id') || '').toLowerCase(),
+        parentGroup: el.closest('.category-group') as HTMLDetailsElement | null,
+      };
+    });
+
+    let searchTimeout: number;
+    searchInput.addEventListener('input', (e) => {
+      cancelAnimationFrame(searchTimeout);
+      const target = e.target as HTMLInputElement;
+
+      searchTimeout = requestAnimationFrame(() => {
+        const query = target.value.toLowerCase().trim();
+
+        if (!query) {
+          // Reset visibility
+          cachedLessons.forEach(({ el }) =>
+            el.classList.remove('hidden-search')
+          );
+          groups.forEach((el) => el.classList.remove('hidden-search'));
+          return;
+        }
+
+        // Track which categories have visible matches
+        const categoryMatches = new Set<HTMLDetailsElement>();
+
+        cachedLessons.forEach(({ el, name, id, parentGroup }) => {
+          const isMatch = name.includes(query) || id.includes(query);
+
+          if (parentGroup) {
+            if (isMatch) {
+              el.classList.remove('hidden-search');
+              categoryMatches.add(parentGroup);
+            } else {
+              el.classList.add('hidden-search');
+            }
+          }
+        });
+
+        groups.forEach((group) => {
+          if (categoryMatches.has(group as HTMLDetailsElement)) {
+            group.classList.remove('hidden-search');
+            (group as HTMLDetailsElement).open = true;
+          } else {
+            group.classList.add('hidden-search');
+          }
+        });
+      });
+    });
+  }
+
+  // Handle language selector redirection via client-side routing
+  function setupLangSelector() {
+    const langSelect = document.getElementById(
+      'lang-select'
+    ) as HTMLSelectElement;
+    if (!langSelect || langSelect.dataset.langInitialized) return;
+    langSelect.dataset.langInitialized = 'true';
+
+    langSelect.addEventListener('change', (e) => {
+      const newLang = (e.target as HTMLSelectElement).value;
+      const currentPath = window.location.pathname;
+      const segments = currentPath.split('/');
+
+      // swap language segment (e.g. /ultimate-python/[lang]/...)
+      const baseIndex = segments.indexOf('ultimate-python');
+      if (baseIndex !== -1 && segments[baseIndex + 1] !== undefined) {
+        if (segments[baseIndex + 1] === newLang) return;
+        segments[baseIndex + 1] = newLang;
+        const newPath = segments.join('/');
+        navigate(newPath);
+      }
+    });
+  }
+
+  // Handle sidebar toggle collapsing/expanding
+  function setupSidebarToggle() {
+    const toggleBtn = document.getElementById('sidebar-toggle');
+    const backdrop = document.getElementById('sidebar-backdrop');
+    if (!toggleBtn || toggleBtn.dataset.toggleInitialized) return;
+    toggleBtn.dataset.toggleInitialized = 'true';
+
+    // Load initial state
+    const stored = localStorage.getItem('sidebar-collapsed');
+    const isMobile = window.innerWidth < 900;
+    const isCollapsed = isMobile || stored === 'true';
+    if (isCollapsed) {
+      document.documentElement.classList.add('sidebar-collapsed');
+    } else {
+      document.documentElement.classList.remove('sidebar-collapsed');
+    }
+
+    const closeSidebar = () => {
+      document.documentElement.classList.add('sidebar-transitioning');
+      document.documentElement.classList.add('sidebar-collapsed');
+      document.documentElement.classList.remove('sidebar-mobile-open');
+      localStorage.setItem('sidebar-collapsed', 'true');
+    };
+
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.add('sidebar-transitioning');
+      const collapsed =
+        document.documentElement.classList.toggle('sidebar-collapsed');
+      localStorage.setItem('sidebar-collapsed', String(collapsed));
+      // Show/hide mobile backdrop only on explicit user toggle
+      if (window.innerWidth < 900) {
+        if (collapsed) {
+          document.documentElement.classList.remove('sidebar-mobile-open');
+        } else {
+          document.documentElement.classList.add('sidebar-mobile-open');
+        }
+      }
+    });
+
+    if (backdrop) {
+      backdrop.addEventListener('click', closeSidebar);
+    }
+
+    // Clean up transitioning class when transition finishes
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar) {
+      const clearTransition = () => {
+        document.documentElement.classList.remove('sidebar-transitioning');
+      };
+      sidebar.addEventListener('transitionend', clearTransition);
+      sidebar.addEventListener('transitioncancel', clearTransition);
+    }
+
+    // Auto-collapse/expand on window resize (transitions are disabled by default here)
+    if (!(window as any).resizeListenerBound) {
+      (window as any).resizeListenerBound = true;
+      let lastWidth = window.innerWidth;
+      window.addEventListener('resize', () => {
+        const currentWidth = window.innerWidth;
+        const wasDesktop = lastWidth >= 900;
+        const isMobile = currentWidth < 900;
+
+        if (wasDesktop && isMobile) {
+          document.documentElement.classList.add('sidebar-collapsed');
+          document.documentElement.classList.remove('sidebar-mobile-open');
+        } else if (!wasDesktop && !isMobile) {
+          // Always expand the sidebar on desktop width and save state
+          document.documentElement.classList.remove('sidebar-collapsed');
+          document.documentElement.classList.remove('sidebar-mobile-open');
+          localStorage.setItem('sidebar-collapsed', 'false');
+        }
+        lastWidth = currentWidth;
+      });
+    }
+  }
+
+  // Handle sidebar logo click to prevent reloading if already on landing page
+  function setupLogoClick() {
+    const logoLink = document.querySelector(
+      '.sidebar-logo'
+    ) as HTMLAnchorElement;
+    if (!logoLink || logoLink.dataset.logoInitialized) return;
+    logoLink.dataset.logoInitialized = 'true';
+
+    logoLink.addEventListener('click', (e) => {
+      const currentPath = window.location.pathname;
+      const targetPath = logoLink.getAttribute('href');
+
+      const normalize = (p: string | null) => (p ? p.replace(/\/+$/, '') : '');
+      if (normalize(currentPath) === normalize(targetPath)) {
+        e.preventDefault();
+      }
+    });
+  }
+
+  // Run on page loads (View Transitions friendly)
+  function init() {
+    setupSearch();
+    setupLangSelector();
+    setupSidebarToggle();
+    setupLogoClick();
+  }
+
+  init();
+  document.addEventListener('astro:page-load', init);
+</script>
+
+<!-- Inline styles for search filtering -->
+<style is:global>
+  .hidden-search {
+    display: none !important;
+  }
+</style>

@@ -47,9 +47,15 @@ fi
 
 # --- Use the specific Python executable for all commands ---
 
-# Lint and format checks (ruff and isort are installed in the venv)
+# Lint and format checks (ruff handles both linting and import sorting)
 "$PYTHON_EXEC" -m ruff check
-"$PYTHON_EXEC" -m isort --check --diff .
+"$PYTHON_EXEC" -m ruff format --check
+
+# Verify README translations consistency
+"$PYTHON_EXEC" check_readmes.py
+
+# Type check with mypy
+"$PYTHON_EXEC" -m mypy ultimatepython check_readmes.py runner.py
 
 # Coverage
 "$PYTHON_EXEC" -m coverage run runner.py

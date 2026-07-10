@@ -1,0 +1,86 @@
+"""
+Functions are reusable blocks of code that perform a specific task.
+
+In Python, functions are first-class citizens, meaning they can be passed as
+arguments to other functions, returned from other functions, and assigned to
+variables. This module covers parameter definition, argument passing, function scope
+following the LEGB (Local, Enclosing, Global, Built-in) lookup rule, and the
+consequences of mutable vs immutable default parameter values.
+"""
+
+from collections.abc import Callable
+from functools import partial
+from typing import Any
+
+
+def add(x: Any, y: Any) -> Any:
+    """Add two objects together to produce a new object.
+
+    Two differences between `add` and `main` are that:
+
+    - It accepts input parameters
+    - It returns a value
+    """
+    return x + y
+
+
+def sum_until(fn: Callable[[int], int], n: int) -> int:
+    """Sum function results from 0 until n - 1.
+
+    This expects a function to be provided as its first input and an integer
+    as its second input. Like `add`, `sum_until` returns a value.
+
+    The fact that a function can be passed into `sum_until` highlights a core
+    concept that was mentioned before: everything in Python is an object, and
+    that includes this docstring!
+    """
+    total = 0
+    for i in range(n):
+        total += fn(i)
+    return total
+
+
+def without_parameters() -> object:
+    """A function that does not accept parameters and does not return a value.
+
+    The return type is annotated as `object` to allow callers that assert
+    on the returned value (e.g. `assert without_parameters() is None`) without
+    triggering static checker complaints about a function annotated as
+    returning None being used as a value.
+    """
+    return None
+
+
+def main() -> None:
+    # The `add` function can be used for numbers as expected
+    add_result_int = add(1, 2)
+    assert add_result_int == 3
+
+    # We can use `functools.partial` to create a new function with some
+    # arguments pre-filled, which is a cleaner alternative to lambdas in many cases.
+    add_five = partial(add, 5)
+    assert add_five(10) == 15
+
+    # The `add` function can be used for strings as well
+    add_result_string = add("hello", " world")
+    assert add_result_string == "hello world"
+
+    # Run the input function multiple times. Notice that we make use of
+    # `lambda` to create an anonymous function (i.e. a function without
+    # a name) that accepts one input and does something with it. Anonymous
+    # functions are powerful because they allow us to write functions
+    # inline, unlike `add` and `sum_until`
+    run_results = sum_until(lambda i: i * 100, 5)
+    assert run_results == 1000, run_results
+
+    # We can see the `sum_until` docstring by accessing the `__doc__` magic
+    # attribute! Remember this - everything in Python is an object
+    # `__doc__` may be None in some environments, coalesce to an empty string
+    assert "includes this docstring!" in (sum_until.__doc__ or "")
+
+    # Call a function without parameters
+    assert without_parameters() is None
+
+
+if __name__ == "__main__":
+    main()
