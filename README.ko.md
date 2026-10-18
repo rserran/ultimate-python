@@ -26,7 +26,7 @@ print("Ultimate Python 학습 가이드")
 
 이 GitHub 저장소는 대학 졸업 후, 대규모 회사에서 근무하면서
 그리고 [Celery](https://github.com/celery/celery)와 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com) 같은 오픈소스 프로젝트에 기여하면서
-지난 5년 이상 동안 배운 [core Python](https://www.python.org/)에 대한 지식을 공유하기 위해 만들었습니다.
+지난 10년 이상 동안 배운 [core Python](https://www.python.org/)에 대한 지식을 공유하기 위해 만들었습니다.
 저는 더 많은 사람들이 Python을 배우고 자신의 열정을 추구하길 기대합니다. 🎓
 
 ## 목표
@@ -34,7 +34,7 @@ print("Ultimate Python 학습 가이드")
 이 가이드를 만드는 주요 목표는 다음과 같습니다:
 
 🏆 실습 학습을 선호하는 Python 초보자를 위한 **학습 자료를 제공합니다.**
-이 저장소에는 [PyCharm](https://www.jetbrains.com/pycharm/)과 같은 IDE 및 [Replit](https://replit.com/languages/python3)와 같은 브라우저에서 실행할 수 있는 독립형 모듈 모음이 있습니다. 기본 터미널에서도 예제를 실행할 수 있습니다.
+이 저장소에는 [PyCharm](https://www.jetbrains.com/pycharm/)과 같은 IDE 및 GitHub Codespaces를 통한 브라우저에서 실행할 수 있는 독립형 모듈 모음이 있습니다. 기본 터미널에서도 예제를 실행할 수 있습니다.
 대부분의 코드 라인에 프로그램이 단계별로 어떤 작업을 하는지 안내하는 신중하게 작성된 주석이 있습니다.
 사용자는 `main` 루틴을 삭제하지 않고, 각 변경 후에 [성공적으로 실행](runner.py)되는 한 소스 코드를 얼마든지 수정할 수 있습니다.
 
@@ -45,7 +45,7 @@ print("Ultimate Python 학습 가이드")
 
 ## 시작하기
 
-[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/huangsam/ultimate-python)
 
 로컬 컴퓨터에 Git 및 Python을 설치하지 않고도 브라우저에서 작업 환경을 시작하려면 위의 배지를 클릭하세요. 이러한
 요구 사항이 이미 충족된 경우, 저장소를 바로 clone해도 됩니다.
@@ -83,19 +83,29 @@ print("Ultimate Python 학습 가이드")
     - 컴프리헨션: [list | tuple | set | dict](ultimatepython/fundamentals/comprehension.py)
 3. **객체 지향 프로그래밍**
     - 기본 클래스: [기본 정의](ultimatepython/oop/basic_class.py) ( 🍰 )
+    - 데이터 클래스: [dataclass](ultimatepython/oop/dataclass.py) ( 🍰 )
     - 상속: [상속](ultimatepython/oop/inheritance.py) ( 🍰 )
     - 캡슐화: [캡슐화 정의](ultimatepython/oop/encapsulation.py)
+    - 프로퍼티: [property | setter | deleter](ultimatepython/oop/property.py) ( 🍰 )
+    - 열거형: [Enum | auto | Flag](ultimatepython/oop/enum.py) ( 🍰 )
     - 추상 클래스: [추상 정의](ultimatepython/oop/abstract_class.py)
     - 예외 클래스: [예외 정의](ultimatepython/oop/exception_class.py)
     - 반복자 클래스: [반복자 정의 | yield](ultimatepython/oop/iterator_class.py) ( 🤯 )
     - 믹스인: [믹스인 정의](ultimatepython/oop/mixin.py) ( 🤯 )
     - 메서드 결정 순서: [mro](ultimatepython/oop/mro.py) ( 🤯 )
-4. **표준 라이브러리**
+4. **데이터 구조**
+    - 데크: [deque](ultimatepython/data_structures/deque.py) ( 🤯 )
+    - 네임드튜플: [namedtuple](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
+    - OrderedDict: [OrderedDict](ultimatepython/data_structures/ordereddict.py) ( 🤯 )
+    - 디폴트딕트: [defaultdict](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - 힙: [heap queue](ultimatepython/data_structures/heap.py) ( 🤯 )
+5. **표준 라이브러리**
     - 파일 처리: [파일 처리](ultimatepython/stdlib/file_handling.py) ( 🤯 )
     - 정규 표현식: [search | findall | match | fullmatch](ultimatepython/stdlib/regex.py) ( 🤯 )
     - 데이터 포맷: [json | xml | csv](ultimatepython/stdlib/data_format.py) ( 🤯 )
     - 날짜와 시간: [datetime | timezone](ultimatepython/stdlib/date_time.py) ( 🤯 )
-5. **고급**
+    - 반복자 도구: [반복자 도구](ultimatepython/stdlib/itertools.py) ( 🤯 )
+6. **고급**
     - 데코레이터: [데코레이터 정의 | wraps](ultimatepython/advanced/decorator.py) ( 🤯 )
     - 컨텍스트 관리자: [컨텍스트 관리자](ultimatepython/advanced/context_manager.py) ( 🤯 )
     - 메타클래스: [메타클래스 정의](ultimatepython/advanced/meta_class.py) ( 🤯 )
@@ -103,21 +113,17 @@ print("Ultimate Python 학습 가이드")
     - 바다코끼리 연산자: [할당 표현식 :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - 인수 제약: [위치 전용 / | 키워드 전용 *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
     - 패턴 매칭: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
-    - 템플릿 문자열: [템플릿 문자열 (PEP 750)](ultimatepython/advanced/template_strings.py) ( 🤯 )
-6. **동시성**
+    - 템플릿 문자열: [템플릿 문자열 | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
+7. **동시성**
     - 스레드: [ThreadPoolExecutor](ultimatepython/concurrency/thread.py) ( 🤯 )
+    - 프로세스: [ProcessPoolExecutor](ultimatepython/concurrency/process.py) ( 🤯 )
     - 비동기: [async | await](ultimatepython/concurrency/async.py) ( 🤯 )
     - 서브 인터프리터: [concurrent.interpreters](ultimatepython/concurrency/subinterpreters.py) ( 🤯 )
-7. **엔지니어링**
+8. **엔지니어링**
     - 모킹: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - 벤치마크: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
     - 비트 연산: [비트 연산자](ultimatepython/engineering/bitwise.py) ( 🍰 ), [1의 보수/2의 보수](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - 데크: [deque](ultimatepython/engineering/deque.py) ( 🤯 )
-    - 네임드튜플: [namedtuple](ultimatepython/engineering/namedtuple.py) ( 🤯 )
-    - 디폴트딕트: [defaultdict](ultimatepython/engineering/defaultdict.py) ( 🤯 )
-    - 반복자 도구: [반복자 도구](ultimatepython/engineering/itertools.py) ( 🤯 )
     - 딕셔너리 결합: [딕셔너리 병합 | 와 |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
-    - 힙: [heap queue](ultimatepython/engineering/heap.py) ( 🤯 )
     - 시간 복잡도: [cPython 연산](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## 추가 자료

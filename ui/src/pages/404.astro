@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Sidebar from '../components/Sidebar.astro';
+import Button from '../components/common/Button.astro';
+import AppShell from '../layouts/AppShell.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/ui';
 import { ArrowRight } from '@lucide/astro';
 
@@ -10,32 +10,28 @@ const t = useTranslations(lang);
 Astro.response.status = 404;
 ---
 
-<Layout title={t('notFound.title')}>
-  <div class="app-container" id="app-container">
-    <Sidebar activeLang={lang} />
+<AppShell title={t('notFound.title')} activeLang={lang}>
+  <main class="not-found-container animate-fade-in">
+    <div class="not-found-content">
+      <p class="not-found-code">404</p>
+      <h1>{t('notFound.title')}</h1>
+      <p class="not-found-message">{t('notFound.message')}</p>
 
-    <main class="not-found-container animate-fade-in">
-      <div class="not-found-content">
-        <p class="not-found-code">404</p>
-        <h1>{t('notFound.title')}</h1>
-        <p class="not-found-message">{t('notFound.message')}</p>
-
-        <div class="cta-group">
-          <a href={`/ultimate-python/${lang}/`} class="btn btn-secondary">
-            {t('nav.home')}
-          </a>
-          <a
-            href={`/ultimate-python/${lang}/fundamentals/variable/`}
-            class="btn btn-primary"
-          >
-            {t('nav.start')}
-            <ArrowRight size={16} class="btn-arrow" />
-          </a>
-        </div>
+      <div class="cta-group">
+        <Button href={`/ultimate-python/${lang}/`} variant="secondary">
+          {t('nav.home')}
+        </Button>
+        <Button
+          href={`/ultimate-python/${lang}/fundamentals/variable/`}
+          variant="primary"
+        >
+          {t('nav.start')}
+          <ArrowRight size={16} class="btn-arrow" />
+        </Button>
       </div>
-    </main>
-  </div>
-</Layout>
+    </div>
+  </main>
+</AppShell>
 
 <style>
   .not-found-container {
@@ -85,45 +81,5 @@ Astro.response.status = 404;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0.5rem;
-  }
-
-  .btn {
-    padding: 0.8rem 1.6rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all var(--transition-speed);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .btn-primary {
-    background-color: var(--forest-green);
-    color: var(--bg-primary);
-  }
-
-  .btn-primary:hover {
-    background-color: var(--forest-green-light);
-    color: var(--bg-primary);
-    transform: translateY(-1px);
-  }
-
-  .btn-secondary {
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-  }
-
-  .btn-secondary:hover {
-    background-color: var(--bg-tertiary);
-    transform: translateY(-1px);
-  }
-
-  .btn-arrow {
-    transition: transform var(--transition-speed);
-  }
-
-  .btn-primary:hover .btn-arrow {
-    transform: translateX(4px);
   }
 </style>

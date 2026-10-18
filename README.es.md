@@ -25,7 +25,7 @@ print("Guía de estudio 'Python Definitivo'")
 ## Motivación
 
 Creé este repositorio de GitHub para compartir lo que he aprendido sobre [Python](https://www.python.org/)
-durante más de 5 años usándolo como graduado de universidad, empleado en grandes empresas y como contribuidor
+durante más de 10 años usándolo como graduado de universidad, empleado en grandes empresas y como contribuidor
 de código abierto en repositorios como [Celery](https://github.com/celery/celery) y
 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com).
 Espero ver a más personas aprendiendo Python y persiguiendo su pasión a través de él. 🎓
@@ -36,8 +36,8 @@ Estos son los objetivos principales de esta guía:
 
 🏆 **Servir como un recurso** para principiantes de Python que prefieren aprender de forma práctica.
 Este repositorio contiene una colección de módulos independientes que pueden ejecutarse en
-un IDE como [PyCharm](https://www.jetbrains.com/pycharm/) y en el navegador, como
-[Replit](https://replit.com/languages/python3). Incluso una terminal sencilla funcionará con los ejemplos.
+un IDE como [PyCharm](https://www.jetbrains.com/pycharm/) o en el navegador a través de GitHub Codespaces.
+Incluso una terminal sencilla funcionará con los ejemplos.
 La mayoría de las líneas de código tienen comentarios útiles que guían al lector paso a paso.
 Se anima a los usuarios a modificar el código fuente en cualquier parte siempre y cuando las rutinas
 principales (`main`) no se eliminen y los programas se ejecuten con éxito tras cada cambio (ver [runner.py](runner.py)).
@@ -52,7 +52,7 @@ recomendado si tu objetivo es convertirte en un verdadero
 
 ## Empezando
 
-[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/huangsam/ultimate-python)
 
 Haz clic en la imagen de arriba para crear un ambiente de trabajo en el navegador sin necesidad
 de tener Git y Python instalados en tu ordenador local. Si estos requisitos ya se cumplen,
@@ -92,19 +92,29 @@ Hay dos maneras de ejecutar los módulos:
     - Comprensión: [list | tuple | set | dict](ultimatepython/fundamentals/comprehension.py)
 3. **Programación orientada a objetos**
     - Clase básica: [Definición de básica](ultimatepython/oop/basic_class.py) ( 🍰 )
+    - Clase de datos: [dataclass](ultimatepython/oop/dataclass.py) ( 🍰 )
     - Herencia: [Herencia](ultimatepython/oop/inheritance.py) ( 🍰 )
     - Encapsulación: [Definición de encapsulación](ultimatepython/oop/encapsulation.py)
+    - Propiedad: [property | setter | deleter](ultimatepython/oop/property.py) ( 🍰 )
+    - Enumeración: [Enum | auto | Flag](ultimatepython/oop/enum.py) ( 🍰 )
     - Clase abstracta: [Definición de abstracta](ultimatepython/oop/abstract_class.py)
     - Clase de excepción: [Definición de excepción](ultimatepython/oop/exception_class.py)
     - Clase iteradora: [Definición de iteradora | yield](ultimatepython/oop/iterator_class.py) ( 🤯 )
     - Mixin: [Definición de Mixin](ultimatepython/oop/mixin.py) ( 🤯 )
     - Orden de resolución de método (MRO por sus siglas en inglés): [mro](ultimatepython/oop/mro.py) ( 🤯 )
-4. **Librería estándar**
+4. **Estructuras de datos**
+    - Deque: [deque](ultimatepython/data_structures/deque.py) ( 🤯 )
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
+    - OrderedDict: [OrderedDict](ultimatepython/data_structures/ordereddict.py) ( 🤯 )
+    - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - Heap: [heap queue](ultimatepython/data_structures/heap.py) ( 🤯 )
+5. **Librería estándar**
     - Manejo de archivos: [Manejo de archivos](ultimatepython/stdlib/file_handling.py) ( 🤯 )
     - Expresiones regulares: [search | findall | match | fullmatch](ultimatepython/stdlib/regex.py) ( 🤯 )
     - Formatos de datos: [json | xml | csv](ultimatepython/stdlib/data_format.py) ( 🤯 )
     - Fecha y hora: [datetime | timezone](ultimatepython/stdlib/date_time.py) ( 🤯 )
-5. **Avanzado**
+    - Herramientas de iteradores: [Herramientas de iteradores](ultimatepython/stdlib/itertools.py) ( 🤯 )
+6. **Avanzado**
     - Decorador: [Definición de decorador | wraps](ultimatepython/advanced/decorator.py) ( 🤯 )
     - Gestor de contexto: [Gestores de contexto](ultimatepython/advanced/context_manager.py) ( 🤯 )
     - Metaclase: [Definición de metaclase](ultimatepython/advanced/meta_class.py) ( 🤯 )
@@ -112,21 +122,17 @@ Hay dos maneras de ejecutar los módulos:
     - Operador morsa: [Expresiones de asignación :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - Aplicación de argumentos: [Solo posicional / | Solo palabra clave *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
     - Coincidencia de patrones: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
-    - Template strings: [Template strings (PEP 750)](ultimatepython/advanced/template_strings.py) ( 🤯 )
-6. **Concurrencia**
+    - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
+7. **Concurrencia**
     - Hilos: [ThreadPoolExecutor](ultimatepython/concurrency/thread.py) ( 🤯 )
+    - Procesos: [ProcessPoolExecutor](ultimatepython/concurrency/process.py) ( 🤯 )
     - Asyncio: [async | await](ultimatepython/concurrency/async.py) ( 🤯 )
     - Subinterpretes: [concurrent.interpreters](ultimatepython/concurrency/subinterpreters.py) ( 🤯 )
-7. **Ingeniería**
+8. **Ingeniería**
     - Mocking: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - Referencia: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
     - Bit a bit: [Operadores bit a bit](ultimatepython/engineering/bitwise.py) ( 🍰 ), [Complemento a uno/dos](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - Deque: [deque](ultimatepython/engineering/deque.py) ( 🤯 )
-    - Namedtuple: [namedtuple](ultimatepython/engineering/namedtuple.py) ( 🤯 )
-    - Defaultdict: [defaultdict](ultimatepython/engineering/defaultdict.py) ( 🤯 )
-    - Herramientas de iteradores: [Herramientas de iteradores](ultimatepython/engineering/itertools.py) ( 🤯 )
     - Unión de diccionarios: [Fusión de diccionarios | y |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
-    - Heap: [heap queue](ultimatepython/engineering/heap.py) ( 🤯 )
     - Complejidad de tiempo: [Operaciones de cPython](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## Recursos adicionales

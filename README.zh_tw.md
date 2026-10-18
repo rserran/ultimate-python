@@ -24,7 +24,7 @@ print("Ultimate Python 學習大綱")
 
 ## 動力
 
-我為了分享過去五年作為一個學生，大公司員工，以及開源（例如 [Celery](https://github.com/celery/celery) 和 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com)）貢獻者所習得的[核心 Python](https://www.python.org/)知識而創
+我為了分享過去十年作為一個學生，大公司員工，以及開源（例如 [Celery](https://github.com/celery/celery) 和 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com)）貢獻者所習得的[核心 Python](https://www.python.org/)知識而創
 建了這個代碼倉庫。我期待更多人能抱持熱忱並開始一段與Python的美好旅程。🎓
 
 ## 目標
@@ -32,7 +32,7 @@ print("Ultimate Python 學習大綱")
 這是創建本指南的主要目標：
 
 🏆 **為喜歡動手學習的Python新手提供資源。** 本存儲庫集合了不同題目的獨立模組範例，而每個模組可以獨立在普通
-終端機（Terminal），IDE（如 [PyCharm](https://www.jetbrains.com/pycharm/)）或者瀏覽器（如 [Replit](https://replit.com/languages/python3)）中運行。範例中的註解都經過精心編寫，引導讀者逐步了解程
+終端機（Terminal），IDE（如 [PyCharm](https://www.jetbrains.com/pycharm/)）或者透過 GitHub Codespaces 在瀏覽器中運行。範例中的註解都經過精心編寫，引導讀者逐步了解程
 式流程。在不刪除主例程（main)並在修改後[成功運行](runner.py)大前題下，我鼓勵讀者修改源代碼作練習。
 
 🏆 **為想重溫Python核心概念的程式員提供指南。** 本存儲庫主要借助內置庫（builtin libraries）作重溫工具，
@@ -41,7 +41,7 @@ print("Ultimate Python 學習大綱")
 
 ## 學習之旅
 
-[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/huangsam/ultimate-python)
 
 單擊上面的徽章就可在瀏覽器中啟動工作環境，而無需在電腦上額外安裝Git和Python。當你完成啟動，請複製這存儲庫。
 當你可以開啟你所複製存儲庫後，您就準備好Python學習之旅!善用每個模組，請細讀註解並嘗試運行模組代碼。
@@ -78,19 +78,29 @@ print("Ultimate Python 學習大綱")
     - 綜合：[list | tuple | set | dict](ultimatepython/fundamentals/comprehension.py)
 3. **物件導向程式設計**
     - 基本類別：[基本定義](ultimatepython/oop/basic_class.py) ( 🍰 )
+    - 資料類別：[dataclass](ultimatepython/oop/dataclass.py) ( 🍰 )
     - 繼承：[繼承](ultimatepython/oop/inheritance.py) ( 🍰 )
     - 封裝：[封裝定義](ultimatepython/oop/encapsulation.py)
+    - 屬性：[property | setter | deleter](ultimatepython/oop/property.py) ( 🍰 )
+    - 列舉：[Enum | auto | Flag](ultimatepython/oop/enum.py) ( 🍰 )
     - 抽象類別：[抽象定義](ultimatepython/oop/abstract_class.py)
     - 異常類別：[異常定義](ultimatepython/oop/exception_class.py)
     - 迭代類別：[迭代器定義](ultimatepython/oop/iterator_class.py) ( 🤯 )
     - Mixin：[Mixin定義](ultimatepython/oop/mixin.py) ( 🤯 )
     - 方法解析順序：[mro](ultimatepython/oop/mro.py) ( 🤯 )
-4. **標準函式庫**
+4. **資料結構**
+    - 雙端隊列：[deque](ultimatepython/data_structures/deque.py) ( 🤯 )
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
+    - OrderedDict: [OrderedDict](ultimatepython/data_structures/ordereddict.py) ( 🤯 )
+    - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - 堆積: [heap queue](ultimatepython/data_structures/heap.py) ( 🤯 )
+5. **標準函式庫**
     - 文件處理: [File Handling](ultimatepython/stdlib/file_handling.py) ( 🤯 )
     - 正規表示式：[search | findall | match | fullmatch](ultimatepython/stdlib/regex.py) ( 🤯 )
     - 數據格式：[json | xml | csv](ultimatepython/stdlib/data_format.py) ( 🤯 )
     - 日期時間: [datetime | timezone](ultimatepython/stdlib/date_time.py) ( 🤯 )
-5. **進階技巧**
+    - 迭代器工具：[迭代器工具](ultimatepython/stdlib/itertools.py) ( 🤯 )
+6. **進階技巧**
     - 裝飾器：[Decorator definition | wraps](ultimatepython/advanced/decorator.py) ( 🤯 )
     - 資源管理器：[Context managers](ultimatepython/advanced/context_manager.py) ( 🤯 )
     - 元類：[Metaclass定義](ultimatepython/advanced/meta_class.py) ( 🤯 )
@@ -98,21 +108,17 @@ print("Ultimate Python 學習大綱")
     - 海象運算子：[賦值表達式 :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - 參數強制：[僅位置 / | 僅關鍵字 *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
     - 模式匹配：[match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
-    - 模板字串：[Template strings (PEP 750)](ultimatepython/advanced/template_strings.py) ( 🤯 )
-6. **併發**
+    - 模板字串：[模板字串 | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
+7. **併發**
     - 執行緒：[ThreadPoolExecutor](ultimatepython/concurrency/thread.py) ( 🤯 )
+    - 行程：[ProcessPoolExecutor](ultimatepython/concurrency/process.py) ( 🤯 )
     - 異步：[async | await](ultimatepython/concurrency/async.py) ( 🤯 )
     - 子解釋器：[concurrent.interpreters](ultimatepython/concurrency/subinterpreters.py) ( 🤯 )
-7. **工程實踐**
+8. **工程實踐**
     - 模擬：[MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - 基準：[cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
     - 按位: [中的位元運算符](ultimatepython/engineering/bitwise.py) ( 🍰 ), [一個的補語/補碼](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - 雙端隊列：[deque](ultimatepython/engineering/deque.py) ( 🤯 )
-    - Namedtuple: [namedtuple](ultimatepython/engineering/namedtuple.py) ( 🤯 )
-    - Defaultdict: [defaultdict](ultimatepython/engineering/defaultdict.py) ( 🤯 )
-    - 迭代器工具：[迭代器工具](ultimatepython/engineering/itertools.py) ( 🤯 )
     - 字典聯合：[字典合併 | 和 |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
-    - 堆積: [heap queue](ultimatepython/engineering/heap.py) ( 🤯 )
     - 時間複雜度：[cPython操作](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## 額外資源

@@ -1,5 +1,6 @@
 # System
 .DS_Store
+Thumbs.db
 
 # IDE
 .idea/
@@ -11,9 +12,16 @@
 coverage.json
 coverage.xml
 *.egg-info/
+.mypy_cache/
 .ruff_cache/
 __pycache__/
 build/
 htmlcov/
 venv/
+.venv/
+uv.lock
+
+# Developer assets
 brainstorm/
+playground/
+scratch/

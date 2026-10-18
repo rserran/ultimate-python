@@ -24,21 +24,21 @@ print("Ultimate Python स्टडी गाइड")
 
 ## प्रेरणा
 
-मैंने यह गिटहब रिपोजिटरी [core Python](https://www.python.org/) के बारे में जो कुछ मैंने पिछले 5+ वर्षों में सीखा है, उसे साझा करने के लिए बनाई है। मैंने इसे एक कॉलेज ग्रेजुएट, बड़ी कंपनियों के कर्मचारी, और [Celery](https://github.com/celery/celery) और [Full Stack Python](https://github.com/mattmakai/fullstackpython.com) जैसी रिपोजिटरी के ओपन-सोर्स कंट्रीब्यूटर के रूप में उपयोग किया है। मैं यह देखने के लिए उत्सुक हूँ कि और लोग पायथन सीखें और इसके माध्यम से अपने जुनून को आगे बढ़ाएं। 🎓
+मैंने यह गिटहब रिपोजिटरी [core Python](https://www.python.org/) के बारे में जो कुछ मैंने पिछले 10+ वर्षों में सीखा है, उसे साझा करने के लिए बनाई है। मैंने इसे एक कॉलेज ग्रेजुएट, बड़ी कंपनियों के कर्मचारी, और [Celery](https://github.com/celery/celery) और [Full Stack Python](https://github.com/mattmakai/fullstackpython.com) जैसी रिपोजिटरी के ओपन-सोर्स कंट्रीब्यूटर के रूप में उपयोग किया है। मैं यह देखने के लिए उत्सुक हूँ कि और लोग पायथन सीखें और इसके माध्यम से अपने जुनून को आगे बढ़ाएं। 🎓
 
 
 ## लक्ष्य
 
 इस गाइड को बनाने के मुख्य लक्ष्य निम्नलिखित हैं:
 
-🏆 **संसाधन के रूप में सेवा देना** उन नए पायथन उपयोगकर्ताओं के लिए जो प्रैक्टिकल तरीके से सीखना पसंद करते हैं। इस रिपोजिटरी में स्वतंत्र मॉड्यूलों का एक संग्रह है, जिन्हें IDE जैसे [PyCharm](https://www.jetbrains.com/pycharm/) में या [Replit](https://replit.com/languages/python3) जैसे ब्राउज़र में चलाया जा सकता है। पुराने साधारण टर्मिनल में भी इन उदाहरणों को चलाया जा सकता है। अधिकतर लाइनों में बहुत ही अच्छे से लिखे गए comments होते हैं, जो पाठक को प्रोग्राम्स के प्रत्येक चरण के माध्यम से मार्गदर्शन करते हैं। उपयोगकर्ताओं को कोड में बदलाव करने के लिए प्रोत्साहित किया जाता है, बशर्ते कि `main` रूटीन को हटाया न जाए और हर परिवर्तन के बाद [सफलतापूर्वक चलाया जाए](runner.py)।
+🏆 **संसाधन के रूप में सेवा देना** उन नए पायथन उपयोगकर्ताओं के लिए जो प्रैक्टिकल तरीके से सीखना पसंद करते हैं। इस रिपोजिटरी में स्वतंत्र मॉड्यूलों का एक संग्रह है, जिन्हें IDE जैसे [PyCharm](https://www.jetbrains.com/pycharm/) में या GitHub Codespaces के माध्यम से ब्राउज़र में चलाया जा सकता है। पुराने साधारण टर्मिनल में भी इन उदाहरणों को चलाया जा सकता है। अधिकतर लाइनों में बहुत ही अच्छे से लिखे गए comments होते हैं, जो पाठक को प्रोग्राम्स के प्रत्येक चरण के माध्यम से मार्गदर्शन करते हैं। उपयोगकर्ताओं को कोड में बदलाव करने के लिए प्रोत्साहित किया जाता है, बशर्ते कि `main` रूटीन को हटाया न जाए और हर परिवर्तन के बाद [सफलतापूर्वक चलाया जाए](runner.py)।
 
 🏆 **शुद्ध गाइड के रूप में सेवा देना** उन लोगों के लिए जो मुख्य पायथन अवधारणाओं को फिर से समझना चाहते हैं। केवल [बिल्ट-इन लाइब्रेरीज़](https://docs.python.org/3/library/) का उपयोग किया गया है ताकि इन अवधारणाओं को बिना किसी विशेष डोमेन की अवधारणाओं के सरलता से समझाया जा सके। इसी कारण से लोकप्रिय ओपन-सोर्स लाइब्रेरीज़ और फ्रेमवर्क (जैसे `sqlalchemy`, `requests`, `pandas`) को इंस्टॉल नहीं किया गया है। हालांकि, इन फ्रेमवर्क्स के स्रोत कोड को पढ़ना प्रेरणादायक है और यदि आपका लक्ष्य एक सच्चे [Pythonista](https://www.urbandictionary.com/define.php?term=pythonista) बनने का है तो इसे ज़रूर पढ़ना चाहिए।
 
 
 ## शुरूआत
 
-[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/huangsam/ultimate-python)
 
 ऊपर दिए गए बैज पर क्लिक करें ताकि आप ब्राउज़र में एक कार्यशील वातावरण शुरू कर सकें, इसके लिए आपके स्थानीय मशीन पर Git और पायथन की आवश्यकता नहीं होगी। यदि ये आवश्यकताएँ पहले से ही पूरी हो चुकी हैं, तो आप सीधे रिपोजिटरी को क्लोन कर सकते हैं।
 
@@ -52,7 +52,6 @@ print("Ultimate Python स्टडी गाइड")
 📚 = बाहरी स्रोत,
 🍰 = शुरुआती विषय,
 🤯 = उन्नत विषय
-
 
 1. **पायथन के बारे में**
     - अवलोकन: [पायथन क्या है](https://github.com/trekhleb/learn-python/blob/master/src/getting_started/what_is_python.md) ( 📚, 🍰 )
@@ -75,19 +74,29 @@ print("Ultimate Python स्टडी गाइड")
     - संकलन: [लिसट | ट्यूपल | सेट | डिक्ट](ultimatepython/fundamentals/comprehension.py)
 3. **ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग**
     - बेसिक क्लास: [बेसिक परिभाषा](ultimatepython/oop/basic_class.py) ( 🍰 )
+    - डेटा क्लास: [dataclass](ultimatepython/oop/dataclass.py) ( 🍰 )
     - इन्हरिटैंस: [इन्हरिटैंस](ultimatepython/oop/inheritance.py) ( 🍰 )
     - ऐनकैपसुलेषन: [ऐनकैपसुलेषन परिभाषा](ultimatepython/oop/encapsulation.py)
+    - प्रॉपर्टी: [property | setter | deleter](ultimatepython/oop/property.py) ( 🍰 )
+    - एनम: [Enum | auto | Flag](ultimatepython/oop/enum.py) ( 🍰 )
     - एैबस्टराक्ट क्लास: [बेसिक परिभाषा](ultimatepython/oop/abstract_class.py)
     - एक्सेपशन क्लास: [बेसिक परिभाषा](ultimatepython/oop/exception_class.py)
     - इटरेटर क्लास: [इटरेटर परिभाषा | yield](ultimatepython/oop/iterator_class.py) ( 🤯 )
     - मिक्सिन: [मिक्सिन परिभाषा](ultimatepython/oop/mixin.py) ( 🤯 )
     - मेथड रिज़ॉल्यूशन क्रम: [mro](ultimatepython/oop/mro.py) ( 🤯 )
-4. **मानक पुस्तकालय**
+4. **डेटा संरचनाएँ**
+    - डेक: [डेक](ultimatepython/data_structures/deque.py) ( 🤯 )
+    - नामित ट्यूपल: [नामित ट्यूपल](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
+    - OrderedDict: [OrderedDict](ultimatepython/data_structures/ordereddict.py) ( 🤯 )
+    - डिफ़ॉल्ट डिक्ट: [डिफ़ॉल्ट डिक्ट](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - Heap: [heap queue](ultimatepython/data_structures/heap.py) ( 🤯 )
+5. **मानक पुस्तकालय**
     - फ़ाइल प्रबंधन: [फ़ाइल प्रबंधन](ultimatepython/stdlib/file_handling.py) ( 🤯 )
     - नियमित अभिव्यक्ति: [search | findall | match | fullmatch](ultimatepython/stdlib/regex.py) ( 🤯 )
     - डेटा फ़ॉर्मेट: [json | xml | csv](ultimatepython/stdlib/data_format.py) ( 🤯 )
     - दिनांक और समय: [datetime | timezone](ultimatepython/stdlib/date_time.py) ( 🤯 )
-5. **उन्नत**
+    - इटरेटर टूल्स: [इटरेटर टूल्स](ultimatepython/stdlib/itertools.py) ( 🤯 )
+6. **उन्नत**
     - डेकोरेटर: [डेकोरेटर परिभाषा | wraps](ultimatepython/advanced/decorator.py) ( 🤯 )
     - संदर्भ प्रबंधक: [संदर्भ प्रबंधक](ultimatepython/advanced/context_manager.py) ( 🤯 )
     - मेटाक्लास: [मेटाक्लास परिभाषा](ultimatepython/advanced/meta_class.py) ( 🤯 )
@@ -95,21 +104,17 @@ print("Ultimate Python स्टडी गाइड")
     - वॉलरस ऑपरेटर: [असाइनमेंट एक्सप्रेशन :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - तर्क प्रवर्तन: [केवल स्थितीय / | केवल कीवर्ड *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
     - पैटर्न मिलान: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
-    - Template strings: [Template strings (PEP 750)](ultimatepython/advanced/template_strings.py) ( 🤯 )
-6. **समानांतरता**
+    - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
+7. **समानांतरता**
     - थ्रेड: [ThreadPoolExecutor](ultimatepython/concurrency/thread.py) ( 🤯 )
+    - प्रोसेस: [ProcessPoolExecutor](ultimatepython/concurrency/process.py) ( 🤯 )
     - एसिंको: [async | await](ultimatepython/concurrency/async.py) ( 🤯 )
     - सबइंटरप्रेटर: [concurrent.interpreters](ultimatepython/concurrency/subinterpreters.py) ( 🤯 )
-7. **इंजीनियरिंग**
+8. **इंजीनियरिंग**
     - मॉकिंग: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - बेंचमार्क: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
     - बाइनरी: [बाइनरी ऑपरेटर](ultimatepython/engineering/bitwise.py) ( 🍰 ), [एक्स/टू का पूरक](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - डेक: [डेक](ultimatepython/engineering/deque.py) ( 🤯 )
-    - नामित ट्यूपल: [नामित ट्यूपल](ultimatepython/engineering/namedtuple.py) ( 🤯 )
-    - डिफ़ॉल्ट डिक्ट: [डिफ़ॉल्ट डिक्ट](ultimatepython/engineering/defaultdict.py) ( 🤯 )
-    - इटरेटर टूल्स: [इटरेटर टूल्स](ultimatepython/engineering/itertools.py) ( 🤯 )
     - डिक्शनरी यूनियन: [डिक्शनरी मर्ज | और |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
-    - Heap: [heap queue](ultimatepython/engineering/heap.py) ( 🤯 )
     - समय कोम्पलेक्सिटी: [cPython ऑपरेशन्स](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## अतिरिक्त संसाधन
@@ -117,7 +122,6 @@ print("Ultimate Python स्टडी गाइड")
 👔 = इंटरव्यू संसाधन,
 🧪 = कोड नमूने,
 🧠 = प्रोजेक्ट विचार
-
 
 ### गिटहब रिपॉजिटरी
 

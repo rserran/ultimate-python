@@ -1,9 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Sidebar from '../../components/Sidebar.astro';
+import Button from '../../components/common/Button.astro';
+import FeatureCard from '../../components/common/FeatureCard.astro';
+import AppShell from '../../layouts/AppShell.astro';
 import { languages, useTranslations } from '../../i18n/ui';
 import lessons from '../../data/lessons.json';
-import { BookOpen, Settings, Zap, ArrowRight } from '@lucide/astro';
+import { BookOpen, Settings, Zap, ArrowRight, Clock } from '@lucide/astro';
 
 export async function getStaticPaths() {
   return Object.keys(languages).map((lang) => ({
@@ -17,70 +18,75 @@ const t = useTranslations(activeLang);
 const totalLessons = lessons.length;
 ---
 
-<Layout title={t('site.title')} titleSuffix="Home">
-  <div class="app-container" id="app-container">
-    <Sidebar activeLang={activeLang} />
+<AppShell title={t('site.title')} titleSuffix="Home" activeLang={activeLang}>
+  <main class="welcome-container animate-fade-in">
+    <div class="welcome-content">
+      <header class="welcome-header">
+        <h1>{t('welcome.title')}</h1>
+        <p class="subtitle">{t('welcome.subtitle')}</p>
+      </header>
 
-    <main class="welcome-container animate-fade-in">
-      <div class="welcome-content">
-        <header class="welcome-header">
-          <h1>{t('welcome.title')}</h1>
-          <p class="subtitle">
-            {t('welcome.subtitle')}
-          </p>
-        </header>
-
-        <div class="cta-group">
-          <a
-            href={`/ultimate-python/${lang}/fundamentals/variable/`}
-            class="btn btn-primary"
-          >
-            {t('nav.start')}
-            <ArrowRight size={16} class="btn-arrow" />
-          </a>
-          <a
-            href="https://github.com/huangsam/ultimate-python"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary"
-          >
-            {t('nav.github')}
-          </a>
-        </div>
-
-        <section class="info-grid">
-          <div class="info-card">
-            <div class="info-icon"><BookOpen size={24} /></div>
-            <h3>{totalLessons} {t('card.lessons.title')}</h3>
-            <p>{t('card.lessons.desc')}</p>
-          </div>
-
-          <div class="info-card">
-            <div class="info-icon"><Settings size={24} /></div>
-            <h3>{t('card.stdlib.title')}</h3>
-            <p>{t('card.stdlib.desc')}</p>
-          </div>
-
-          <div class="info-card">
-            <div class="info-icon"><Zap size={24} /></div>
-            <h3>{t('card.run.title')}</h3>
-            <p>{t('card.run.desc')}</p>
-          </div>
-        </section>
-
-        <section class="philosophy-section">
-          <h3>{t('zen.title')}</h3>
-          <blockquote>
-            <p>"Beautiful is better than ugly."</p>
-            <p>"Explicit is better than implicit."</p>
-            <p>"Simple is better than complex."</p>
-            <cite>— Tim Peters</cite>
-          </blockquote>
-        </section>
+      <div class="cta-group">
+        <Button
+          href={`/ultimate-python/${lang}/fundamentals/`}
+          variant="primary"
+        >
+          {t('nav.start')}
+          <ArrowRight size={16} class="btn-arrow" />
+        </Button>
+        <Button
+          href="https://github.com/huangsam/ultimate-python"
+          target="_blank"
+          rel="noopener"
+          variant="secondary"
+        >
+          {t('nav.github')}
+        </Button>
       </div>
-    </main>
-  </div>
-</Layout>
+
+      <section class="info-grid">
+        <FeatureCard
+          title={`${totalLessons} ${t('card.lessons.title')}`}
+          description={t('card.lessons.desc')}
+        >
+          <BookOpen size={24} slot="icon" />
+        </FeatureCard>
+
+        <FeatureCard
+          title={t('card.stdlib.title')}
+          description={t('card.stdlib.desc')}
+        >
+          <Settings size={24} slot="icon" />
+        </FeatureCard>
+
+        <FeatureCard
+          title={t('card.run.title')}
+          description={t('card.run.desc')}
+        >
+          <Zap size={24} slot="icon" />
+        </FeatureCard>
+
+        <FeatureCard
+          title={t('card.timeline.title')}
+          description={t('card.timeline.desc')}
+          href={`/ultimate-python/${lang}/python-versions/`}
+        >
+          <Clock size={24} slot="icon" />
+        </FeatureCard>
+      </section>
+
+      <section class="philosophy-section">
+        <h3>{t('zen.title')}</h3>
+        <blockquote>
+          <p>"Beautiful is better than ugly."</p>
+          <p>"Explicit is better than implicit."</p>
+          <p>"Simple is better than complex."</p>
+          <cite>— Tim Peters</cite>
+        </blockquote>
+      </section>
+    </div>
+  </main>
+</AppShell>
 
 <style>
   .welcome-container {
@@ -111,15 +117,16 @@ const totalLessons = lessons.length;
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: clamp(2.2rem, 4.5vw, 2.75rem);
     line-height: 1.2;
     margin-top: 0.5rem;
+    letter-spacing: -0.01em;
   }
 
   .subtitle {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
   .cta-group {
@@ -128,80 +135,10 @@ const totalLessons = lessons.length;
     align-items: center;
   }
 
-  .btn {
-    padding: 0.8rem 1.6rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all var(--transition-speed);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .btn-primary {
-    background-color: var(--forest-green);
-    color: var(--bg-primary);
-  }
-
-  .btn-primary:hover {
-    background-color: var(--forest-green-light);
-    color: var(--bg-primary);
-    transform: translateY(-1px);
-  }
-
-  .btn-secondary {
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-  }
-
-  .btn-secondary:hover {
-    background-color: var(--bg-tertiary);
-    transform: translateY(-1px);
-  }
-
-  .btn-arrow {
-    transition: transform var(--transition-speed);
-  }
-
-  .btn-primary:hover .btn-arrow {
-    transform: translateX(4px);
-  }
-
   .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
-  }
-
-  .info-card {
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-secondary);
-    transition: transform var(--transition-speed);
-  }
-
-  .info-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--forest-green);
-  }
-
-  .info-icon {
-    color: var(--forest-green);
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .info-card h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .info-card p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
   }
 
   .philosophy-section {
@@ -233,10 +170,6 @@ const totalLessons = lessons.length;
   }
 
   @media (width <= 900px) {
-    #app-container {
-      flex-direction: column !important;
-    }
-
     .welcome-container {
       padding: 3rem 1.25rem;
       /* Constant padding-left to clear the floating toggle button on mobile. */
@@ -248,7 +181,7 @@ const totalLessons = lessons.length;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.95rem;
     }
 
     .subtitle {
@@ -259,11 +192,6 @@ const totalLessons = lessons.length;
       flex-wrap: wrap;
       gap: 0.75rem;
       width: 100%;
-    }
-
-    .btn {
-      width: 100%;
-      justify-content: center;
     }
   }
 </style>

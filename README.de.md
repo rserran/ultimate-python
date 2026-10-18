@@ -25,7 +25,7 @@ print("Ultimativer Python-Lernführer")
 ## Motivation
 
 Ich habe dieses GitHub-Repository erstellt, um meine Erkenntnisse über [core Python](https://www.python.org/)
-in den letzten 5 Jahren als Hochschulabsolvent, Angestellter in
+in den letzten 10 Jahren als Hochschulabsolvent, Angestellter in
 großen Unternehmen und als Open-Source-Mitarbeiter von Repositories wie
 [Celery](https://github.com/celery/celery) und
 [Full Stack Python](https://github.com/mattmakai/fullstackpython.com) weiterzugeben.
@@ -37,8 +37,8 @@ Dies sind die Hauptziele bei der Erstellung dieses Leitfadens:
 
 🏆 **Als Ressource fungieren** für Python-Neulinge, die es vorziehen, praktisch zu lernen.
 Dieses Repository enthält eine Sammlung von eigenständigen Modulen, die in einer IDE
- wie [PyCharm](https://www.jetbrains.com/pycharm/) oder im Browser via
- [Replit](https://replit.com/languages/python3) ausgeführt werden können. Ein Terminal funktioniert
+ wie [PyCharm](https://www.jetbrains.com/pycharm/) oder im Browser via GitHub Codespaces
+ ausgeführt werden können. Ein Terminal funktioniert
  ebenfalls gut für die Beispiele. Die meisten Zeilen enthalten sorgfälltig formulierte Kommentare, die den Leser
  Schritt für Schritt durch die Abläufe führen. Benutzer werden ermutigt, den Quellcode zu ändern,
  sofern die `main`-Routinen nicht entfernt werden und die Programme nach Änderungen weiterhin erfolgreich
@@ -54,7 +54,7 @@ inspirierend und wird dringend empfohlen, wenn Sie ein echter Profi werden wolle
 
 ## Erste Schritte
 
-[![Run on Replit](https://replit.com/badge/github/huangsam/ultimate-python)](https://replit.com/github/huangsam/ultimate-python)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/huangsam/ultimate-python)
 
 Klicken Sie auf das obige Abzeichen, um eine Arbeitsumgebung im Browser zu starten, ohne
 ohne dass Sie Git und Python auf Ihrem lokalen Rechner installiert haben müssen. Wenn diese Voraussetzungen
@@ -94,19 +94,29 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
     - Comprehension: [list | tuple | set | dict](ultimatepython/fundamentals/comprehension.py)
 3. **Objektorientierte Programmierung**
     - Basic class: [Basic definition](ultimatepython/oop/basic_class.py) ( 🍰 )
+    - Data class: [dataclass](ultimatepython/oop/dataclass.py) ( 🍰 )
     - Inheritance: [Inheritance](ultimatepython/oop/inheritance.py) ( 🍰 )
     - Encapsulation: [Encapsulation definition](ultimatepython/oop/encapsulation.py)
+    - Property: [property | setter | deleter](ultimatepython/oop/property.py) ( 🍰 )
+    - Enum: [Enum | auto | Flag](ultimatepython/oop/enum.py) ( 🍰 )
     - Abstract class: [Abstract definition](ultimatepython/oop/abstract_class.py)
     - Exception class: [Exception definition](ultimatepython/oop/exception_class.py)
     - Iterator class: [Iterator definition | yield](ultimatepython/oop/iterator_class.py) ( 🤯 )
     - Mixin: [Mixin definition](ultimatepython/oop/mixin.py) ( 🤯 )
     - Method resolution order: [mro](ultimatepython/oop/mro.py) ( 🤯 )
-4. **Standardbibliothek**
+4. **Datenstrukturen**
+    - Deque: [deque](ultimatepython/data_structures/deque.py) ( 🤯 )
+    - Namedtuple: [namedtuple](ultimatepython/data_structures/namedtuple.py) ( 🤯 )
+    - OrderedDict: [OrderedDict](ultimatepython/data_structures/ordereddict.py) ( 🤯 )
+    - Defaultdict: [defaultdict](ultimatepython/data_structures/defaultdict.py) ( 🤯 )
+    - Heap: [heap queue](ultimatepython/data_structures/heap.py) ( 🤯 )
+5. **Standardbibliothek**
     - File Handling: [File Handling](ultimatepython/stdlib/file_handling.py) ( 🤯 )
     - Regular expression: [search | findall | match | fullmatch](ultimatepython/stdlib/regex.py) ( 🤯 )
     - Data format: [json | xml | csv](ultimatepython/stdlib/data_format.py) ( 🤯 )
     - Datetime: [datetime | timezone](ultimatepython/stdlib/date_time.py) ( 🤯 )
-5. **Fortgeschrittene**
+    - Iterator-Tools: [Iterator-Tools](ultimatepython/stdlib/itertools.py) ( 🤯 )
+6. **Fortgeschrittene**
     - Decorator: [Decorator definition | wraps](ultimatepython/advanced/decorator.py) ( 🤯 )
     - Context manager: [Context managers](ultimatepython/advanced/context_manager.py) ( 🤯 )
     - Metaclass: [Metaclass definition](ultimatepython/advanced/meta_class.py) ( 🤯 )
@@ -114,21 +124,17 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
     - Walrus operator: [Assignment expressions :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - Argument enforcement: [Positional-only / | Keyword-only *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
     - Pattern Matching: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
-    - Template strings: [Template strings (PEP 750)](ultimatepython/advanced/template_strings.py) ( 🤯 )
-6. **Nebenläufigkeit**
+    - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
+7. **Nebenläufigkeit**
     - Thread: [ThreadPoolExecutor](ultimatepython/concurrency/thread.py) ( 🤯 )
+    - Process: [ProcessPoolExecutor](ultimatepython/concurrency/process.py) ( 🤯 )
     - Asyncio: [async | await](ultimatepython/concurrency/async.py) ( 🤯 )
     - Subinterpreters: [concurrent.interpreters](ultimatepython/concurrency/subinterpreters.py) ( 🤯 )
-7. **Softwaretechnik**
+8. **Softwaretechnik**
     - Mocking: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - Benchmark: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
     - Bitwise: [Bitwise operators](ultimatepython/engineering/bitwise.py) ( 🍰 ), [One's/Two's Complement](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - Deque: [deque](ultimatepython/engineering/deque.py) ( 🤯 )
-    - Namedtuple: [namedtuple](ultimatepython/engineering/namedtuple.py) ( 🤯 )
-    - Defaultdict: [defaultdict](ultimatepython/engineering/defaultdict.py) ( 🤯 )
-    - Iterator-Tools: [Iterator-Tools](ultimatepython/engineering/itertools.py) ( 🤯 )
     - Dict union: [Dictionary merge | and |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
-    - Heap: [heap queue](ultimatepython/engineering/heap.py) ( 🤯 )
     - Time complexity: [cPython operations](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## Zusätzliche Ressourcen

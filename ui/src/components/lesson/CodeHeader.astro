@@ -1,0 +1,105 @@
+---
+import { Terminal } from '@lucide/astro';
+import CopyButton from './CopyButton.astro';
+import RunButton from './RunButton.astro';
+
+interface Props {
+  filename: string;
+  annotation?: {
+    version: string;
+    feature: string;
+  } | null;
+  code: string;
+  codespacesUrl?: string;
+}
+
+const {
+  filename,
+  annotation,
+  code,
+  codespacesUrl = 'https://codespaces.new/huangsam/ultimate-python',
+} = Astro.props;
+---
+
+<div class="pane-header">
+  <div class="filename-badge">
+    <span class="file-icon">
+      <Terminal size={16} />
+    </span>
+    <span class="filename-text">{filename}</span>
+    {annotation && (
+      <span class="annotation-badge" title={annotation.feature}>
+        {annotation.version}
+      </span>
+    )}
+  </div>
+  <div class="action-buttons">
+    <CopyButton code={code} />
+    <RunButton codespacesUrl={codespacesUrl} />
+  </div>
+</div>
+
+<style>
+  .pane-header {
+    height: 60px;
+    background-color: #252526;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    /* Constant padding-left to clear the floating sidebar toggle button in all */
+    /* states (open/collapsed) without triggering layout reflow and text shifting. */
+    padding-left: 3.5rem;
+    flex-shrink: 0;
+  }
+
+  .filename-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+
+  .file-icon {
+    color: #858585;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .filename-text {
+    font-family: var(--font-mono);
+    color: #cccccc;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .annotation-badge {
+    background-color: rgba(45, 106, 79, 0.25);
+    color: #52b788;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 9999px;
+    margin-left: 0.5rem;
+    border: 1px solid rgba(82, 183, 136, 0.3);
+    font-family: var(--font-sans);
+    white-space: nowrap;
+    cursor: help;
+  }
+
+  @media (width <= 480px) {
+    .annotation-badge {
+      display: none;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+</style>
