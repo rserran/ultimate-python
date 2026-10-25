@@ -107,6 +107,7 @@ print("Ultimate Python 學習大綱")
     - 弱引用：[weakref](ultimatepython/advanced/weak_ref.py) ( 🤯 )
     - 海象運算子：[賦值表達式 :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - 參數強制：[僅位置 / | 僅關鍵字 *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
+    - 字典聯合：[字典合併 | 和 |=](ultimatepython/advanced/dict_union.py) ( 🤯 )
     - 模式匹配：[match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
     - 模板字串：[模板字串 | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
 7. **併發**
@@ -117,8 +118,9 @@ print("Ultimate Python 學習大綱")
 8. **工程實踐**
     - 模擬：[MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - 基準：[cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
+    - 記憶體分析：[tracemalloc | take_snapshot](ultimatepython/engineering/memory_profile.py) ( 🤯 )
+    - 日誌記錄：[logging | getLogger | Handler](ultimatepython/engineering/logger.py) ( 🤯 )
     - 按位: [中的位元運算符](ultimatepython/engineering/bitwise.py) ( 🍰 ), [一個的補語/補碼](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - 字典聯合：[字典合併 | 和 |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
     - 時間複雜度：[cPython操作](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## 額外資源

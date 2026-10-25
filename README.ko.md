@@ -112,6 +112,7 @@ print("Ultimate Python 학습 가이드")
     - 약한 참조: [weakref](ultimatepython/advanced/weak_ref.py) ( 🤯 )
     - 바다코끼리 연산자: [할당 표현식 :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - 인수 제약: [위치 전용 / | 키워드 전용 *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
+    - 딕셔너리 결합: [딕셔너리 병합 | 와 |=](ultimatepython/advanced/dict_union.py) ( 🤯 )
     - 패턴 매칭: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
     - 템플릿 문자열: [템플릿 문자열 | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
 7. **동시성**
@@ -122,8 +123,9 @@ print("Ultimate Python 학습 가이드")
 8. **엔지니어링**
     - 모킹: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - 벤치마크: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
+    - 메모리 프로파일: [tracemalloc | take_snapshot](ultimatepython/engineering/memory_profile.py) ( 🤯 )
+    - 로거: [logging | getLogger | Handler](ultimatepython/engineering/logger.py) ( 🤯 )
     - 비트 연산: [비트 연산자](ultimatepython/engineering/bitwise.py) ( 🍰 ), [1의 보수/2의 보수](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - 딕셔너리 결합: [딕셔너리 병합 | 와 |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
     - 시간 복잡도: [cPython 연산](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## 추가 자료

@@ -123,6 +123,7 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
     - Weak reference: [weakref](ultimatepython/advanced/weak_ref.py) ( 🤯 )
     - Walrus operator: [Assignment expressions :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - Argument enforcement: [Positional-only / | Keyword-only *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
+    - Dict union: [Dictionary merge | and |=](ultimatepython/advanced/dict_union.py) ( 🤯 )
     - Pattern Matching: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
     - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
 7. **Nebenläufigkeit**
@@ -133,8 +134,9 @@ Es gibt zwei Möglichkeiten, die Module auszuführen:
 8. **Softwaretechnik**
     - Mocking: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - Benchmark: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
+    - Speicherprofilierung: [tracemalloc | take_snapshot](ultimatepython/engineering/memory_profile.py) ( 🤯 )
+    - Logger: [logging | getLogger | Handler](ultimatepython/engineering/logger.py) ( 🤯 )
     - Bitwise: [Bitwise operators](ultimatepython/engineering/bitwise.py) ( 🍰 ), [One's/Two's Complement](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - Dict union: [Dictionary merge | and |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
     - Time complexity: [cPython operations](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## Zusätzliche Ressourcen

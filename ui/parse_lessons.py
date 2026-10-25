@@ -179,6 +179,7 @@ LESSON_ORDER = {
         "weak_ref",
         "walrus_operator",
         "arg_enforcement",
+        "dict_union",
         "pattern_matching",
         "template_strings",
     ],
@@ -191,8 +192,9 @@ LESSON_ORDER = {
     "engineering": [
         "mocking",
         "benchmark",
+        "memory_profile",
+        "logger",
         "bitwise",
-        "dict_union",
     ],
 }
 

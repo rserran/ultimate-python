@@ -103,6 +103,7 @@ print("Ultimate Python स्टडी गाइड")
     - वीक रेफरेंस: [weakref](ultimatepython/advanced/weak_ref.py) ( 🤯 )
     - वॉलरस ऑपरेटर: [असाइनमेंट एक्सप्रेशन :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - तर्क प्रवर्तन: [केवल स्थितीय / | केवल कीवर्ड *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
+    - डिक्शनरी यूनियन: [डिक्शनरी मर्ज | और |=](ultimatepython/advanced/dict_union.py) ( 🤯 )
     - पैटर्न मिलान: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
     - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
 7. **समानांतरता**
@@ -113,8 +114,9 @@ print("Ultimate Python स्टडी गाइड")
 8. **इंजीनियरिंग**
     - मॉकिंग: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - बेंचमार्क: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
+    - मेमोरी प्रोफ़ाइल: [tracemalloc | take_snapshot](ultimatepython/engineering/memory_profile.py) ( 🤯 )
+    - लॉगर: [logging | getLogger | Handler](ultimatepython/engineering/logger.py) ( 🤯 )
     - बाइनरी: [बाइनरी ऑपरेटर](ultimatepython/engineering/bitwise.py) ( 🍰 ), [एक्स/टू का पूरक](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - डिक्शनरी यूनियन: [डिक्शनरी मर्ज | और |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
     - समय कोम्पलेक्सिटी: [cPython ऑपरेशन्स](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## अतिरिक्त संसाधन

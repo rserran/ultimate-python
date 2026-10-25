@@ -110,6 +110,7 @@ Existem duas maneiras de rodar os módulos:
     - Referência fraca: [weakref](ultimatepython/advanced/weak_ref.py) ( 🤯 )
     - Operador morsa: [Expressões de atribuição :=](ultimatepython/advanced/walrus_operator.py) ( 🤯 )
     - Aplicação de argumentos: [Somente posicional / | Somente palavra-chave *](ultimatepython/advanced/arg_enforcement.py) ( 🤯 )
+    - União de dicionários: [Fusão de dicionários | e |=](ultimatepython/advanced/dict_union.py) ( 🤯 )
     - Correspondência de padrões: [match | case](ultimatepython/advanced/pattern_matching.py) ( 🤯 )
     - Template strings: [Template strings | t"..."](ultimatepython/advanced/template_strings.py) ( 🤯 )
 7. **Concorrência**
@@ -120,8 +121,9 @@ Existem duas maneiras de rodar os módulos:
 8. **Engenharia**
     - Mocking: [MagicMock | PropertyMock | patch](ultimatepython/engineering/mocking.py) ( 🤯 )
     - Benchmark: [cProfile | pstats](ultimatepython/engineering/benchmark.py) ( 🤯 )
+    - Perfil de memória: [tracemalloc | take_snapshot](ultimatepython/engineering/memory_profile.py) ( 🤯 )
+    - Logger: [logging | getLogger | Handler](ultimatepython/engineering/logger.py) ( 🤯 )
     - Bitwise: [Operadores bitwise](ultimatepython/engineering/bitwise.py) ( 🍰 ), [Complemento de Um/Dois](https://www.geeksforgeeks.org/difference-between-1s-complement-representation-and-2s-complement-representation-technique/) ( 📚 )
-    - União de dicionários: [Fusão de dicionários | e |=](ultimatepython/engineering/dict_union.py) ( 🤯 )
     - Time complexity: [Operações de cPython](https://wiki.python.org/moin/TimeComplexity) ( 📚, 🤯 )
 
 ## Recursos adicionais
