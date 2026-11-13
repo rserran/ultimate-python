@@ -3,13 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
+    "parse": "python3 parse_lessons.py",
     "dev": "python3 parse_lessons.py && astro dev",
     "start": "python3 parse_lessons.py && astro dev",
     "build": "python3 parse_lessons.py && astro build",
     "preview": "astro preview",
-    "lint": "astro check",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "lint": "python3 parse_lessons.py && astro check",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "check": "biome check --write .",
+    "check:ci": "biome check .",
     "astro": "astro"
   },
   "dependencies": {
@@ -18,8 +21,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "prettier": "^3.9.9",
-    "prettier-plugin-astro": "^1.1.0",
+    "@biomejs/biome": "2.6.4",
     "typescript": "^6.0.3"
   },
   "allowScripts": {
